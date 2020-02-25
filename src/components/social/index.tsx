@@ -21,7 +21,7 @@ export function Social() {
         {
           SocialMedia.map(social => (
             <div className="col s24 l8" key={social.name}>
-              <div>
+              <div className="pulse-content">
                 <a href={social.link} target="_blank" rel="noopener noreferrer">
                   <img src={icons[social.name]} alt="f" width="48" height="48" color="white" />
                 </a>
