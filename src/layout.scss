@@ -11,7 +11,7 @@ $white: #eee;
 }
 
 body {
-  background-color: rgba(230, 230, 230, 0);
+  background-color: $primary-color;
 }
 
 .full.row {
