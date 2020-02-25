@@ -5,13 +5,13 @@ import React from 'react';
 import { SocialMedia } from '../../data/social-media';
 
 import GitHubIcon from '../../assets/icons/github.svg';
-import FacebookIcon from '../../assets/icons/facebook.svg';
+import TwitterIcon from '../../assets/icons/twitter.svg';
 import LinkedInIcon from '../../assets/icons/linkedin.svg';
 
 export function Social() {
   const icons: any = {
-    facebook: FacebookIcon,
     linkedin: LinkedInIcon,
+    twitter: TwitterIcon,
     github: GitHubIcon,
   };
 
