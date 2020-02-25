@@ -22,7 +22,7 @@ export function PersonalInfo() {
           }
         </tbody>
       </table>
-      <h5>Languages</h5>
+      <h5>Programming Languages</h5>
       <table className="software">
         <tbody>
           {
@@ -37,7 +37,7 @@ export function PersonalInfo() {
           }
         </tbody>
       </table>
-      <h5>Software</h5>
+      <h5>Software Experience</h5>
       <table className="software">
         <tbody>
           {
