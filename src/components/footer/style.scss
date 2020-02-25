@@ -1,0 +1,25 @@
+footer {
+  p {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: left;
+
+    span {
+      display: inline;
+
+      &.email {
+        position: relative;
+        top: -7px;
+      }
+    }
+
+    a {
+      padding-right: 10px;
+      float: right;
+    }
+
+    img {
+      display: inline;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+section#intro {
+  box-shadow: inset 8px 0px 11px -6px #5c5c5c;
+}
+
+.placeholder {
+  background-color: #959490;
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder img {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 25%;
+  transition: opacity 1s linear;
+}
+
+.placeholder img.loaded {
+  opacity: 1;
+}
+
+.img-small {
+  filter: blur(50px);
+  /* this is needed so Safari keeps sharp edges */
+  transform: scale(1);
+
+  &.large-loaded {
+    opacity: 0 !important;
+  }
+}
+
+.large-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
