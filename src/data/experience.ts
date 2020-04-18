@@ -39,7 +39,7 @@ export const SoftwareExperience = [
 
 export const JobsExperience = [
   {
-    position: "Head of System Architect",
+    position: "Head System Architect",
     location: "Fibler, Zalka",
     year: "May 2017 - Present",
     description: fiblerDescription
