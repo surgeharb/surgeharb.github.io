@@ -96,7 +96,7 @@ export const EducationExperience = [
   },
   {
     position: 'ONLINE COURSES – UDEMY.COM',
-    location: 'Byblos, Lebanon',
+    location: '',
     year: '',
     description: 'Machine Learning and Data Science. <br> Artificial Neural Networks, Supervised/Unsupervised Learning, Deep Reinforcement Learning.'
   },
