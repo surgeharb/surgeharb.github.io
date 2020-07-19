@@ -1,5 +1,10 @@
 let tf961Description = '';
-tf961Description += 'Front-End, Back-End and Software developer.';
+tf961Description += '•	&nbsp Member of Agile Scrum team building full stack projects. <br />';
+tf961Description += '•	&nbsp React.js WebApp development, mobile and desktop designs. <br />';
+tf961Description += '•	&nbsp Node.js backend development and Legacy systems integration. <br />';
+tf961Description += '•	&nbsp Admin CMS and Dashboard development with several Databases. <br />';
+tf961Description += '•	&nbsp Quality assurance with Unit testing and End-to-End testing. <br />';
+tf961Description += '•	&nbsp Projects Deployment and Automation for development, staging and production.';
 
 let fiblerDescription = '';
 fiblerDescription += '•	&nbsp REST API implementation with NodeJS. <br />';
@@ -10,40 +15,36 @@ fiblerDescription += '•	&nbsp Integration with Firebase SDK, VOIP Servers and 
 fiblerDescription += '•	&nbsp Implementation of Chat, Notifications, Intelligent Search and Image Processing.';
 
 let siegmaDescription = '';
-siegmaDescription += 'Front-End, Back-End and Software developer. <br />';
-siegmaDescription += 'Front-End Website Projects: <a href=\'https://www.inhype.social/\' target=\'_blank\'>InHype Platform</a>. <br />';
-siegmaDescription += 'Backend Projects: <a href=\'http://www.fibler.com/\' target=\'_blank\'>Fibler</a> Backend, API and Dashboard Developer. <br />';
-siegmaDescription += 'Full Website Projects: <a href=\'http://bejjanigroup.com\' target=\'_blank\'>Bejjani Group</a>, <a href=\'http://azuretelecom.com\' target=\'_blank\'>Azure Telecom</a>, <a href=\'http://siegma.com\' target=\'_blank\'>Siegma Website</a>.';
+siegmaDescription += '•	&nbsp Front-End, Back-End and Software developer. <br />';
+siegmaDescription += '•	&nbsp Front-End Website Projects: <a href=\'https://www.inhype.social/\' target=\'_blank\'>InHype Platform</a>. <br />';
+siegmaDescription += '•	&nbsp Backend Projects: <a href=\'http://www.fibler.com/\' target=\'_blank\'>Fibler</a> Backend, API and Dashboard Developer. <br />';
+siegmaDescription += '•	&nbsp Full Website Projects: <a href=\'http://bejjanigroup.com\' target=\'_blank\'>Bejjani Group</a>, <a href=\'http://azuretelecom.com\' target=\'_blank\'>Azure Telecom</a>, <a href=\'http://siegma.com\' target=\'_blank\'>Siegma Website</a>.';
 
 export const LanguageExperience = [
   { name: 'TypeScript', xp: 90 },
   { name: 'Javascript', xp: 90 },
   { name: 'Bash', xp: 80 },
   { name: 'Python', xp: 75 },
-  { name: 'PHP', xp: 75 },
-  { name: 'Java', xp: 65 },
-  { name: 'C/C++', xp: 50 },
 ];
 
 export const SoftwareExperience = [
-  { name: 'Git & NPM', xp: 85 },
+  { name: 'Git / GitHub', xp: 90 },
+  { name: 'Strapi CMS', xp: 90 },
+  { name: 'Xcode', xp: 80 },
   { name: 'Android Studio', xp: 80 },
-  { name: 'Xcode', xp: 75 },
-  { name: 'Game Engines', xp: 70 },
-  { name: 'Photoshop', xp: 50 },
-  { name: 'Illustrator', xp: 50 },
-  { name: 'WordPress', xp: 40 },
+  { name: 'Zeplin / AdobeXD', xp: 70 },
+  { name: 'Game Engines', xp: 60 },
 ];
 
 export const JobsExperience = [
   {
-    position: 'Senior Full Stack Developer',
+    position: 'Full Stack Engineer',
     location: 'TF961, Dbayyeh',
     year: 'May 2020 - Present',
     description: tf961Description
   },
   {
-    position: 'Head System Architect',
+    position: 'System Architect',
     location: 'Fibler, Zalka',
     year: 'May 2017 - April 2020',
     description: fiblerDescription
@@ -55,10 +56,34 @@ export const JobsExperience = [
     description: siegmaDescription
   },
   {
-    position: 'Computer Labs and Professor Assistant',
-    location: 'LAU Byblos',
-    year: '2015 - 2018',
-    description: 'Maintain Computers and Printers in the labs. <br> Help instructor and students working in the labs.'
+    position: 'React and Node.js System Developer',
+    location: 'Fitterbite, Remote',
+    year: '2016 - 2019',
+    description: '•	&nbsp Remote work with a team of mobile developers to launch <a href=\'http://fitterbite.com/\' target=\'_blank\'>Fitterbite</a> - healthy meals delivery mobile app.'
+  },
+  {
+    position: 'React, React Native & Node.js Backend',
+    location: '"Remote House" App',
+    year: '',
+    description: '•	&nbsp React Native app shows real-time statistics and grants control over the house through commands sent to the server. <br />• &nbsp Raspberry PI server communicating with several devices (Arduino and micro-components) on the network.'
+  },
+  {
+    position: 'React Native & Node.js',
+    location: 'AnyShop, Grocery Delivery',
+    year: '',
+    description: '•	&nbsp Project is currently under development with the latest cutting-edge technologies:<br />• &nbsp TypeScript on the mobile apps (React Native) and TypeScript on the backend (Nest.js) with MongoDB as a database engine.'
+  },
+  {
+    position: 'Ionic Hybrid Mobile App Developer',
+    location: '"Work Manager" App',
+    year: '',
+    description: '•	&nbsp Construction Foreman Companion manages workers’ salaries and payments, projects’ spending, statements, future payments. <br />•	&nbsp Tracks owner’s payment checks and daily workers report and project level analysis.'
+  },
+  {
+    position: 'Node.js & Angular Developer',
+    location: 'Stackbeam, Realtime Monitoring & Debugging',
+    year: '',
+    description: 'Minimalistic modern companion that allows monitoring of server health, incoming requests, crashes, queries, <br />logs and alarms through real-time charts and dashboard analytics (Node.js backend + Angular frontend Dashboard).'
   },
 ];
 
@@ -67,6 +92,12 @@ export const EducationExperience = [
     position: 'Lebanese American University',
     location: 'Byblos, Lebanon',
     year: '2015 - 2018',
-    description: 'Bachelor in Computer Science. <br> Key courses: Algorithms & Data Structures, Software Engineering, Web Development, Database Management Systems.'
+    description: 'Bachelor of Science, Computer Science. <br> Key Courses: Algorithms & Data Structure, Software Engineering, Web & Database Management.'
+  },
+  {
+    position: 'ONLINE COURSES – UDEMY.COM',
+    location: 'Byblos, Lebanon',
+    year: '',
+    description: 'Machine Learning and Data Science. <br> Artificial Neural Networks, Supervised/Unsupervised Learning, Deep Reinforcement Learning.'
   },
 ];

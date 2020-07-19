@@ -20,7 +20,7 @@ export function Experience() {
                   <div>
                     <h6>
                       <span>{experience.position}</span>
-                      <span>&nbsp;@&nbsp;</span>
+                      <span>{experience.year ? ' @ ' : ''}</span>
                       <span>{experience.location}</span>
                       <span>{experience.year}</span>
                     </h6>
@@ -44,7 +44,7 @@ export function Experience() {
                   <div>
                     <h6>
                       <span>{experience.position}</span>
-                      <span>&nbsp;@&nbsp;</span>
+                      <span>{experience.year ? ' @ ' : ''}</span>
                       <span>{experience.location}</span>
                       <span>{experience.year}</span>
                     </h6>
