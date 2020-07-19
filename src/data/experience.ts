@@ -62,26 +62,26 @@ export const JobsExperience = [
     description: '•	&nbsp Remote work with a team of mobile developers to launch <a href=\'http://fitterbite.com/\' target=\'_blank\'>Fitterbite</a> - healthy meals delivery mobile app.'
   },
   {
-    position: 'React, React Native & Node.js Backend',
-    location: '"Remote House" App',
+    position: 'Remote House, React Native & Node.js',
+    location: '',
     year: '',
     description: '•	&nbsp React Native app shows real-time statistics and grants control over the house through commands sent to the server. <br />• &nbsp Raspberry PI server communicating with several devices (Arduino and micro-components) on the network.'
   },
   {
-    position: 'React Native & Node.js',
-    location: 'AnyShop, Grocery Delivery',
+    position: 'AnyShop, Grocery Delivery, React Native & Node.js',
+    location: '',
     year: '',
     description: '•	&nbsp Project is currently under development with the latest cutting-edge technologies:<br />• &nbsp TypeScript on the mobile apps (React Native) and TypeScript on the backend (Nest.js) with MongoDB as a database engine.'
   },
   {
-    position: 'Ionic Hybrid Mobile App Developer',
-    location: '"Work Manager" App',
+    position: 'Work Manager, Ionic Hybrid Mobile App',
+    location: '',
     year: '',
     description: '•	&nbsp Construction Foreman Companion manages workers’ salaries and payments, projects’ spending, statements, future payments. <br />•	&nbsp Tracks owner’s payment checks and daily workers report and project level analysis.'
   },
   {
-    position: 'Node.js & Angular Developer',
-    location: 'Stackbeam, Realtime Monitoring & Debugging',
+    position: 'Stackbeam, Node.js & Angular',
+    location: '',
     year: '',
     description: 'Minimalistic modern companion that allows monitoring of server health, incoming requests, crashes, queries, <br />logs and alarms through real-time charts and dashboard analytics (Node.js backend + Angular frontend Dashboard).'
   },
