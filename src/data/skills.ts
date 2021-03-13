@@ -10,12 +10,13 @@ export const FrontEndSkills = [
 ];
 
 export const BackEndSkills = [
-  { name: "Node.js", percent: 90 },
-  { name: "Nest.js", percent: 90 },
-  { name: "Express", percent: 90 },
-  { name: "MongoDB", percent: 90 },
-  { name: "TypeScript", percent: 90 },
-  { name: "GraphQl", percent: 80 },
-  { name: "AWS", percent: 80 },
-  { name: "MySQL", percent: 60 }
+  { name: 'Node.js', percent: 90 },
+  { name: 'Nest.js', percent: 90 },
+  { name: 'Express', percent: 90 },
+  { name: 'MongoDB', percent: 90 },
+  { name: 'Postgres', percent: 90 },
+  { name: 'TypeScript', percent: 90 },
+  { name: 'GraphQl', percent: 80 },
+  { name: 'AWS', percent: 80 },
+  { name: 'MySQL', percent: 60 },
 ];

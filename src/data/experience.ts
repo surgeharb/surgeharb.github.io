@@ -23,8 +23,8 @@ siegmaDescription += '•	&nbsp Full Website Projects: <a href=\'http://bejjanig
 export const LanguageExperience = [
   { name: 'TypeScript', xp: 90 },
   { name: 'Javascript', xp: 90 },
+  { name: 'Python', xp: 80 },
   { name: 'Bash', xp: 80 },
-  { name: 'Python', xp: 75 },
 ];
 
 export const SoftwareExperience = [
@@ -38,52 +38,57 @@ export const SoftwareExperience = [
 
 export const JobsExperience = [
   {
-    position: 'Full Stack Engineer',
-    location: 'TF961, Dbayyeh',
+    position: 'Senior Software Engineer',
+    location: 'TF961, Remote',
     year: 'May 2020 - Present',
-    description: tf961Description
+    description: tf961Description,
   },
   {
-    position: 'System Architect',
+    position: 'Full Stack Web Developer',
     location: 'Fibler, Zalka',
     year: 'May 2017 - April 2020',
-    description: fiblerDescription
+    description: fiblerDescription,
   },
   {
     position: 'Full Stack Web Developer',
     location: 'SIEGMA, Zalka',
     year: 'May 2016 - April 2017',
-    description: siegmaDescription
+    description: siegmaDescription,
   },
   {
     position: 'React and Node.js System Developer',
     location: 'Fitterbite, Remote',
     year: '2016 - 2019',
-    description: '•	&nbsp Remote work with a team of mobile developers to launch <a href=\'http://fitterbite.com/\' target=\'_blank\'>Fitterbite</a> - healthy meals delivery mobile app.'
+    description:
+      "•	&nbsp Remote work with a team of mobile developers to launch <a href='http://fitterbite.com/' target='_blank'>Fitterbite</a> - healthy meals delivery mobile app.",
   },
   {
     position: 'Remote House, React Native & Node.js',
     location: '',
     year: '',
-    description: '•	&nbsp React Native app shows real-time statistics and grants control over the house through commands sent to the server. <br />• &nbsp Raspberry PI server communicating with several devices (Arduino and micro-components) on the network.'
+    description:
+      '•	&nbsp React Native app shows real-time statistics and grants control over the house through commands sent to the server. <br />• &nbsp Raspberry PI server communicating with several devices (Arduino and micro-components) on the network.',
   },
   {
     position: 'AnyShop, Grocery Delivery, React Native & Node.js',
     location: '',
     year: '',
-    description: '•	&nbsp Project is currently under development with the latest cutting-edge technologies:<br />• &nbsp TypeScript on the mobile apps (React Native) and TypeScript on the backend (Nest.js) with MongoDB as a database engine.'
+    description:
+      '•	&nbsp Project is currently under development with the latest cutting-edge technologies:<br />• &nbsp TypeScript on the mobile apps (React Native) and TypeScript on the backend (Nest.js) with MongoDB as a database engine.',
   },
   {
     position: 'Work Manager, Ionic Hybrid Mobile App',
     location: '',
     year: '',
-    description: '•	&nbsp Construction Foreman Companion manages workers’ salaries and payments, projects’ spending, statements, future payments. <br />•	&nbsp Tracks owner’s payment checks and daily workers report and project level analysis.'
+    description:
+      '•	&nbsp Construction Foreman Companion manages workers’ salaries and payments, projects’ spending, statements, future payments. <br />•	&nbsp Tracks owner’s payment checks and daily workers report and project level analysis.',
   },
   {
     position: 'Stackbeam, Node.js & Angular',
     location: '',
     year: '',
-    description: 'Minimalistic modern companion that allows monitoring of server health, incoming requests, crashes, queries, <br />logs and alarms through real-time charts and dashboard analytics (Node.js backend + Angular frontend Dashboard).'
+    description:
+      'Minimalistic modern companion that allows monitoring of server health, incoming requests, crashes, queries, <br />logs and alarms through real-time charts and dashboard analytics (Node.js backend + Angular frontend Dashboard).',
   },
 ];
 

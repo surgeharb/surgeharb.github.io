@@ -13,5 +13,5 @@ export const MainInfo = [
   { key: 'Name', value: 'Serge Harb' },
   { key: 'Nationality', value: 'Lebanese' },
   { key: 'Residency', value: 'Byblos, Lebanon' },
-  { key: 'Languages', value: 'English, French, Arabic' },
+  { key: 'Languages', value: 'English, Arabic, French' },
 ];
