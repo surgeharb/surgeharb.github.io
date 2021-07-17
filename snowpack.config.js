@@ -9,6 +9,9 @@ module.exports = {
   plugins: [
     /* ... */
   ],
+  installOptions: {
+    treeshake: true,
+  }
   packageOptions: {
     /* ... */
   },
@@ -16,7 +19,7 @@ module.exports = {
     /* ... */
   },
   buildOptions: {
-    /* ... */
+    metaUrlPath: 'meta_snowpack'
   },
   alias: {
     react: 'preact/compat',
