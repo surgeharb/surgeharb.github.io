@@ -1,11 +1,11 @@
 ---
 // Component Imports
 import MainHead from '../components/MainHead.astro';
-import Nav from '../components/Nav';
-import Intro from '../components/Intro';
-import Content from '../components/Content';
-import Social from '../components/Social';
-import Footer from '../components/Footer';
+import Nav from '../components/Nav/index.jsx';
+import Intro from '../components/Intro/index.jsx';
+import Content from '../components/Content/index.jsx';
+import Social from '../components/Social/index.jsx';
+import Footer from '../components/Footer/index.jsx';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -16,8 +16,8 @@ import Footer from '../components/Footer';
   </head>
   <body>
     <Nav />
-    <Intro />
-    <Content />
+    <Intro client:visible />
+    <Content client:visible />
     <Social />
     <Footer />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80276642-1"></script>

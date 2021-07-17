@@ -1,13 +1,9 @@
 import { h } from 'preact';
-import { useState } from 'preact/hooks';
+import cx from 'classnames';
 import PropTypes from 'prop-types';
+import { useState } from 'preact/hooks';
 import VizSensor from 'react-visibility-sensor';
-
-// VizAwareChart.propTypes = {
-//   type: PropTypes.oneOf(['bar', 'circle']),
-//   value: PropTypes.number.isRequired,
-//   content?: PropTypes.string,
-// };
+import Styles from './styles.module.scss';
 
 const VizAwareChart = ({ value, content, type }) => {
   const [radius] = useState(48);
@@ -30,35 +26,34 @@ const VizAwareChart = ({ value, content, type }) => {
   };
 
   const drawCircleChart = () => (
-    <li className="display">
-      <div className="circle">
-        <svg width="108" height="108" className="circle__svg">
+    <li className={Styles.display}>
+      <div className={Styles.circle}>
+        <svg
+          width="108"
+          height="108"
+          className={cx(Styles.circle__svg, Styles['circle__progress--path'])}
+        >
+          <circle cx="54" cy="54" r={radius} className={Styles.circle__progress}></circle>
           <circle
             cx="54"
             cy="54"
             r={radius}
-            className="circle__progress circle__progress--path"
-          ></circle>
-          <circle
-            cx="54"
-            cy="54"
-            r={radius}
-            className="circle__progress circle__progress--fill"
+            className={cx(Styles.circle__progress, Styles['circle__progress--fill'])}
             style={extraStyle}
           ></circle>
         </svg>
 
-        <div className="percent">
-          <span className="percent__label">{content || ''}</span>
+        <div className={Styles.percent}>
+          <span className={Styles.percent__label}>{content || ''}</span>
         </div>
       </div>
     </li>
   );
 
   const drawBarChart = () => (
-    <div className="bar">
+    <div className={Styles.bar}>
       <div
-        className="fill"
+        className={Styles.fill}
         style={{ width, transition: `width ${transitionDuration}ms ease` }}
       ></div>
     </div>
@@ -81,6 +76,12 @@ const VizAwareChart = ({ value, content, type }) => {
       {type === 'circle' ? drawCircleChart() : drawBarChart()}
     </VizSensor>
   );
+};
+
+VizAwareChart.propTypes = {
+  type: PropTypes.oneOf(['bar', 'circle']),
+  value: PropTypes.number.isRequired,
+  content: PropTypes.string,
 };
 
 export default VizAwareChart;
