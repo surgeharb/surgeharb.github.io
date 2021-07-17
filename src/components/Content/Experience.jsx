@@ -6,7 +6,14 @@ import { JobsExperience, EducationExperience } from '../../data/experience';
 import Styles from './styles.module.scss';
 
 const Experience = () => (
-  <div className={cx(Styles.rowSection, Styles.insetSection, 'row inset col s24 m15 l18')}>
+  <div
+    className={cx(
+      Styles.container,
+      Styles.rowSection,
+      Styles.insetSection,
+      'row inset col s24 m15 l18'
+    )}
+  >
     <div className={Styles.ofTitle}>
       <h5>Work Experience</h5>
     </div>

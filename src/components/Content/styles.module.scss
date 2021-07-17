@@ -16,6 +16,10 @@
   }
 }
 
+.container {
+  padding-top: 15px !important;
+}
+
 .rowSection,
 .special {
   margin-bottom: 0 !important;
@@ -71,8 +75,8 @@
 
 .special {
   max-width: 94%;
-  margin-left: auto;
-  margin-right: 0;
+  margin-left: auto !important;
+  margin-right: 0 !important;
   @media #{$large-and-up} {
     max-width: 96.35%;
   }
@@ -103,7 +107,7 @@
 }
 
 .timeline {
-  padding-left: 0px;
+  padding-left: 0px !important;
   border-left: 2px solid $grey;
 }
 

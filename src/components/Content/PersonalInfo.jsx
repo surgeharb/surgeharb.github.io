@@ -6,7 +6,7 @@ import VizAwareChart from '../VizAwareChart/index.jsx';
 import Styles from './styles.module.scss';
 
 const PersonalInfo = () => (
-  <div className="col s24 m9 l6">
+  <div className={cx(Styles.container, 'col s24 m9 l6')}>
     <h5>Personal</h5>
     <table className={Styles.table}>
       <tbody>
