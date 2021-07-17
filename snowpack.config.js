@@ -21,7 +21,7 @@ module.exports = {
     /* ... */
   },
   buildOptions: {
-    metaUrlPath: 'meta_snowpack',
+    /* ... */
   },
   alias: {
     react: 'preact/compat',
