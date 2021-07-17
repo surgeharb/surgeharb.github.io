@@ -3,6 +3,14 @@
 
 .intro {
   box-shadow: inset 8px 0px 11px -6px #5c5c5c;
+  background: $grey;
+  & > div {
+    margin-bottom: 0;
+  }
+  p {
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
 }
 
 .placeholder {

@@ -6,7 +6,7 @@ import Styles from './styles.module.scss';
 
 const Content = () => (
   <section className={cx(Styles.content, 'full row')}>
-    <div className="row">
+    <div className={cx(Styles.rowSection, 'row')}>
       <PersonalInfo />
       <Experience />
     </div>

@@ -31,7 +31,7 @@ const Intro = () => {
         </div>
       </header>
 
-      <section id="intro">
+      <section className={Styles.intro}>
         <div className="row">
           <div className="col s24">
             <p>{IntroInfo}</p>

@@ -1,12 +1,13 @@
 export const FrontEndSkills = [
-  { name: "React", percent: 90 },
-  { name: "React Native", percent: 90 },
-  { name: "Angular", percent: 90 },
-  { name: "Ionic", percent: 90 },
-  { name: "Javascript", percent: 90 },
-  { name: "SASS", percent: 85 },
-  { name: "Gulp", percent: 75 },
-  { name: "Vue.js", percent: 60 }
+  { name: 'React', percent: 90 },
+  { name: 'React Native', percent: 90 },
+  { name: 'Angular', percent: 90 },
+  { name: 'Ionic', percent: 90 },
+  { name: 'Javascript', percent: 90 },
+  { name: 'SASS', percent: 85 },
+  { name: 'Gulp', percent: 75 },
+  { name: 'Vue.js', percent: 60 },
+  { name: 'Astro', percent: 60 },
 ];
 
 export const BackEndSkills = [
@@ -17,6 +18,6 @@ export const BackEndSkills = [
   { name: 'Postgres', percent: 90 },
   { name: 'TypeScript', percent: 90 },
   { name: 'GraphQl', percent: 80 },
+  { name: 'Django', percent: 80 },
   { name: 'AWS', percent: 80 },
-  { name: 'MySQL', percent: 60 },
 ];

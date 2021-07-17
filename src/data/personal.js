@@ -5,13 +5,11 @@ export const IntroInfo = `
 `;
 
 export const Contact = {
-  address: 'Lebanon, Hosrayel Byblos, Main Street, Harb Residence.',
+  address: 'Barcelona, Spain',
   email: 'me@sergeharb.com',
 };
 
 export const MainInfo = [
   { key: 'Name', value: 'Serge Harb' },
-  { key: 'Nationality', value: 'Lebanese' },
-  { key: 'Residency', value: 'Byblos, Lebanon' },
-  { key: 'Languages', value: 'English, Arabic, French' },
+  { key: 'Languages', value: 'English, Spanish, Arabic, French' },
 ];

@@ -6,15 +6,15 @@ import { JobsExperience, EducationExperience } from '../../data/experience';
 import Styles from './styles.module.scss';
 
 const Experience = () => (
-  <div className="row inset col s24 m15 l18">
+  <div className={cx(Styles.rowSection, Styles.insetSection, 'row inset col s24 m15 l18')}>
     <div className={Styles.ofTitle}>
       <h5>Work Experience</h5>
     </div>
-    <div className={cx('row', Styles.special)}>
+    <div className={cx(Styles.rowSection, Styles.special, 'row')}>
       <div className={cx('col s24', Styles.timeline)}>
-        <ul>
+        <ul className={Styles.list}>
           {JobsExperience.map((experience, i) => (
-            <li key={`${i}`}>
+            <li key={`${i}`} className={Styles.listItem}>
               <div>
                 <h6>
                   <span>{experience.position}</span>
@@ -32,11 +32,11 @@ const Experience = () => (
     <div className={Styles.ofTitle}>
       <h5>Education</h5>
     </div>
-    <div className={cx('row', Styles.special)}>
+    <div className={cx(Styles.rowSection, Styles.special, 'row')}>
       <div className={cx('col s24', Styles.timeline)}>
-        <ul>
+        <ul className={Styles.list}>
           {EducationExperience.map((experience, i) => (
-            <li key={`${i}`}>
+            <li key={`${i}`} className={Styles.listItem}>
               <div>
                 <h6>
                   <span>{experience.position}</span>
@@ -56,7 +56,7 @@ const Experience = () => (
     </div>
     <div className={Styles.charts}>
       {FrontEndSkills.map((skill) => (
-        <span className="chart" key={skill.name}>
+        <span className={Styles.chart} key={skill.name}>
           <VizAwareChart value={skill.percent} type="circle" content={skill.name} />
         </span>
       ))}
@@ -66,7 +66,7 @@ const Experience = () => (
     </div>
     <div className={Styles.charts}>
       {BackEndSkills.map((skill) => (
-        <span className="chart" key={skill.name}>
+        <span className={Styles.chart} key={skill.name}>
           <VizAwareChart value={skill.percent} type="circle" content={skill.name} />
         </span>
       ))}

@@ -1,3 +1,6 @@
+@import '../../../public/sass/materialize';
+@import '../../../public/sass/colors.scss';
+
 .PulseContent:hover img {
   animation: pulse 0.75s normal;
 }
@@ -17,5 +20,28 @@
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+.social {
+  background: $grey;
+  & > div {
+    padding: 25px 0 0 0;
+    margin-bottom: 0;
+  }
+}
+
+.socialColumn {
+  text-align: center;
+  padding-bottom: 25px !important;
+  a {
+    color: $primary-color;
+    img {
+      background: grey;
+      border-radius: 50%;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      padding: 0.75rem;
+    }
   }
 }

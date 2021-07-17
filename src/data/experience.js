@@ -4,21 +4,27 @@ tf961Description += '•	&nbsp React.js WebApp development, mobile and desktop d
 tf961Description += '•	&nbsp Node.js backend development and Legacy systems integration. <br />';
 tf961Description += '•	&nbsp Admin CMS and Dashboard development with several Databases. <br />';
 tf961Description += '•	&nbsp Quality assurance with Unit testing and End-to-End testing. <br />';
-tf961Description += '•	&nbsp Projects Deployment and Automation for development, staging and production.';
+tf961Description +=
+  '•	&nbsp Projects Deployment and Automation for development, staging and production.';
 
 let fiblerDescription = '';
 fiblerDescription += '•	&nbsp REST API implementation with NodeJS. <br />';
 fiblerDescription += '•	&nbsp Dashboard and CMS Technical Supervisor. <br />';
 fiblerDescription += '•	&nbsp Manage Database Transactions and Users Finances. <br />';
 fiblerDescription += '•	&nbsp Server Security, Clustering, Optimization and Data Analysis. <br />';
-fiblerDescription += '•	&nbsp Integration with Firebase SDK, VOIP Servers and Payment Providers. <br />';
-fiblerDescription += '•	&nbsp Implementation of Chat, Notifications, Intelligent Search and Image Processing.';
+fiblerDescription +=
+  '•	&nbsp Integration with Firebase SDK, VOIP Servers and Payment Providers. <br />';
+fiblerDescription +=
+  '•	&nbsp Implementation of Chat, Notifications, Intelligent Search and Image Processing.';
 
 let siegmaDescription = '';
 siegmaDescription += '•	&nbsp Front-End, Back-End and Software developer. <br />';
-siegmaDescription += '•	&nbsp Front-End Website Projects: <a href=\'https://www.inhype.social/\' target=\'_blank\'>InHype Platform</a>. <br />';
-siegmaDescription += '•	&nbsp Backend Projects: <a href=\'http://www.fibler.com/\' target=\'_blank\'>Fibler</a> Backend, API and Dashboard Developer. <br />';
-siegmaDescription += '•	&nbsp Full Website Projects: <a href=\'http://bejjanigroup.com\' target=\'_blank\'>Bejjani Group</a>, <a href=\'http://azuretelecom.com\' target=\'_blank\'>Azure Telecom</a>, <a href=\'http://siegma.com\' target=\'_blank\'>Siegma Website</a>.';
+siegmaDescription +=
+  "•	&nbsp Front-End Website Projects: <a href='https://www.inhype.social/' target='_blank'>InHype Platform</a>. <br />";
+siegmaDescription +=
+  "•	&nbsp Backend Projects: <a href='http://www.fibler.com/' target='_blank'>Fibler</a> Backend, API and Dashboard Developer. <br />";
+siegmaDescription +=
+  "•	&nbsp Full Website Projects: <a href='http://bejjanigroup.com' target='_blank'>Bejjani Group</a>, <a href='http://azuretelecom.com' target='_blank'>Azure Telecom</a>, <a href='http://siegma.com' target='_blank'>Siegma Website</a>.";
 
 export const LanguageExperience = [
   { name: 'TypeScript', xp: 90 },
@@ -39,25 +45,31 @@ export const SoftwareExperience = [
 export const JobsExperience = [
   {
     position: 'Senior Software Engineer',
+    location: 'Preply, Barcelona',
+    year: 'June 2021 - Present',
+    description: tf961Description,
+  },
+  {
+    position: 'Senior Software Engineer',
     location: 'TF961, Remote',
-    year: 'May 2020 - Present',
+    year: 'May 2020 - May 2021',
     description: tf961Description,
   },
   {
     position: 'Full Stack Web Developer',
-    location: 'Fibler, Zalka',
+    location: 'Fibler, Beirut',
     year: 'May 2017 - April 2020',
     description: fiblerDescription,
   },
   {
     position: 'Full Stack Web Developer',
-    location: 'SIEGMA, Zalka',
+    location: 'SIEGMA, Beirut',
     year: 'May 2016 - April 2017',
     description: siegmaDescription,
   },
   {
     position: 'React and Node.js System Developer',
-    location: 'Fitterbite, Remote',
+    location: 'Fitterbite, Freelance Remote',
     year: '2016 - 2019',
     description:
       "•	&nbsp Remote work with a team of mobile developers to launch <a href='http://fitterbite.com/' target='_blank'>Fitterbite</a> - healthy meals delivery mobile app.",
@@ -97,12 +109,14 @@ export const EducationExperience = [
     position: 'Lebanese American University',
     location: 'Byblos, Lebanon',
     year: '2015 - 2018',
-    description: 'Bachelor of Science, Computer Science. <br> Key Courses: Algorithms & Data Structure, Software Engineering, Web & Database Management.'
+    description:
+      'Bachelor of Science, Computer Science. <br> Key Courses: Algorithms & Data Structure, Software Engineering, Web & Database Management.',
   },
   {
     position: 'ONLINE COURSES – UDEMY.COM',
     location: '',
     year: '',
-    description: 'Machine Learning and Data Science. <br> Artificial Neural Networks, Supervised/Unsupervised Learning, Deep Reinforcement Learning.'
+    description:
+      'Machine Learning and Data Science. <br> Artificial Neural Networks, Supervised/Unsupervised Learning, Deep Reinforcement Learning.',
   },
 ];

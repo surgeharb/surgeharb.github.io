@@ -4,8 +4,8 @@
 .content {
   margin-bottom: 0;
   background: $white;
-  & > .row {
-    & > .col {
+  & > div {
+    & > div {
       padding-top: 15px;
       &:first-child {
         h5 {
@@ -14,17 +14,19 @@
       }
     }
   }
-  .row {
-    margin-bottom: 0;
-    h5 {
-      font-size: 1.25rem;
-      margin-bottom: 1.25rem;
-    }
-    .inset {
-      padding-bottom: 25px;
-      @media #{$small-and-down} {
-        box-shadow: none;
-      }
+}
+
+.rowSection,
+.special {
+  margin-bottom: 0 !important;
+  h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .insetSection {
+    padding-bottom: 25px;
+    @media #{$small-and-down} {
+      box-shadow: none;
     }
   }
 }
@@ -76,87 +78,113 @@
   }
 }
 
+.charts {
+  padding: 0 10%;
+  text-align: center;
+  .chart {
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    margin: 5px 20px 15px 20px;
+    text-align: center;
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .skill {
+      display: inline-block;
+      line-height: 110px;
+      width: 110px;
+      z-index: 2;
+    }
+  }
+}
+
 .timeline {
   padding-left: 0px;
   border-left: 2px solid $grey;
-  ul {
-    margin: 0;
-    li {
-      padding-left: 35px;
+}
+
+.list {
+  margin: 0;
+}
+
+.listItem {
+  padding-left: 35px;
+  position: relative;
+  display: table;
+  width: 100%;
+  & > div {
+    display: table-cell;
+    &:first-child {
       position: relative;
-      display: table;
-      width: 100%;
-      & > div {
-        display: table-cell;
-        &:first-child {
-          position: relative;
-          top: -6px;
-        }
-      }
-      h6 {
-        font-weight: 600;
-        margin-top: 0;
-        & + p {
-          border-bottom: 1px solid $grey;
-          padding-bottom: 0.5rem;
-          margin-bottom: 1.5rem;
-        }
-        span:nth-child(3) {
-          float: right;
-          @media #{$medium-and-down} {
-            float: none;
-            display: block;
-            padding-top: 5px;
-            line-height: 0.5;
-          }
-        }
-      }
-      &:last-child {
-        h6 {
-          & + p {
-            margin-bottom: 0;
-          }
-        }
-      }
-      &:hover {
-        &:before {
-          opacity: 0.9;
-        }
-        &:after {
-          opacity: 0.3;
-          width: 32px;
-          height: 32px;
-          top: -10px;
-        }
-      }
-      &:before {
-        content: '';
-        position: absolute;
-        left: -1px;
-        top: 0px;
-        z-index: 1;
-        transform: translateX(-50%);
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: $primary-color;
-        opacity: 0.66;
-        transition: all 0.3s ease;
-      }
-      &:after {
-        content: '';
-        position: absolute;
-        left: -1px;
-        top: -8px;
-        z-index: 0;
-        transform: translateX(-50%);
-        width: 28px;
-        height: 28px;
-        border-radius: 50%;
-        background: $primary-color;
-        opacity: 0.2;
-        transition: all 0.3s ease;
+      top: -6px;
+    }
+  }
+  h6 {
+    font-weight: 600;
+    margin-top: 0;
+    & + p {
+      border-bottom: 1px solid $grey;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    span:nth-child(3) {
+      float: right;
+      @media #{$medium-and-down} {
+        float: none;
+        display: block;
+        padding-top: 5px;
+        line-height: 0.5;
       }
     }
+  }
+  &:last-child {
+    h6 {
+      & + p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &:hover {
+    &:before {
+      opacity: 0.9;
+    }
+    &:after {
+      opacity: 0.3;
+      width: 32px;
+      height: 32px;
+      top: -10px;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 0px;
+    z-index: 1;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $primary-color;
+    opacity: 0.66;
+    transition: all 0.3s ease;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: -8px;
+    z-index: 0;
+    transform: translateX(-50%);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: $primary-color;
+    opacity: 0.2;
+    transition: all 0.3s ease;
   }
 }
