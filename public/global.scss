@@ -1,61 +1,7 @@
-@import './sass/materialize';
-@import './sass/colors';
-
-/* GENERAL
-/**********/
-
 * {
-  outline: 0;
-  user-select: none;
-  user-drag: none;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: $primary-color;
-}
-
-.full.row {
-  max-width: 100%;
-}
-
-.row {
-  max-width: 95%;
-}
-
-.relative {
-  position: relative;
-}
-
-.inset {
-  box-shadow: inset 8px 0px 8px -6px rgba(92, 92, 92, 1);
-}
-
-p {
-  margin-top: 0;
-}
-
-@media #{$large-and-up} {
-  section > .row {
-    max-width: 90%;
-  }
-}
-
-header {
-  height: 250px;
-  background-repeat: no-repeat;
-  background-size: 1000px;
-  background-position: -130px 40%;
-  @media only screen and (min-width: 666px) {
-    background-size: 150%;
-    background-position: -120px 40%;
-  }
-  @media screen and (min-width: $large-screen-up) {
-    background-size: 110%;
-  }
-  h2 {
-    position: relative;
-    z-index: 100;
-    padding-top: 50px;
-    color: $white;
-  }
+  background-color: #f5f3fa;
 }

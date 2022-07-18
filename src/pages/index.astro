@@ -1,11 +1,7 @@
 ---
 // Component Imports
 import MainHead from '../components/MainHead.astro';
-import Nav from '../components/Nav/index.jsx';
-import Intro from '../components/Intro/index.jsx';
-import Content from '../components/Content/index.jsx';
-import Social from '../components/Social/index.jsx';
-import Footer from '../components/Footer/index.jsx';
+import Card from '../components/Card';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -15,10 +11,21 @@ import Footer from '../components/Footer/index.jsx';
     <MainHead />
   </head>
   <body>
-    <Nav />
-    <Intro client:idle />
-    <Content client:visible />
-    <Social />
-    <Footer />
+      <div class="container" style="padding:16px">
+
+      <!-- columns should be the immediate child of a .row -->
+      <div class="row">
+        <div class="six columns">
+          <Card>
+            <p>Culpa nisi nisi esse culpa magna Lorem. Proident excepteur ad elit labore quis mollit laboris id amet esse velit qui incididunt dolor. Ex ut aute do consequat nulla consequat deserunt consectetur. Incididunt proident commodo ullamco irure proident do fugiat pariatur consectetur ipsum officia. Cillum mollit dolor reprehenderit nulla laborum id ut labore. Deserunt laborum duis duis proident et qui commodo quis sit do. Anim ex amet commodo ad et adipisicing.</p>
+          </Card>
+        </div>
+        <div class="six columns">
+          <Card>
+            <p>Culpa nisi nisi esse culpa magna Lorem. Proident excepteur ad elit labore quis mollit laboris id amet esse velit qui incididunt dolor. Ex ut aute do consequat nulla consequat deserunt consectetur. Incididunt proident commodo ullamco irure proident do fugiat pariatur consectetur ipsum officia. Cillum mollit dolor reprehenderit nulla laborum id ut labore. Deserunt laborum duis duis proident et qui commodo quis sit do. Anim ex amet commodo ad et adipisicing.</p>
+          </Card>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
