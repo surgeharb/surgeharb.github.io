@@ -5,7 +5,7 @@
 
 <Card>
 	<div class="flex direction-column justify-space-between align-center">
-		<Avatar size="lg" />
+		<Avatar size="lg" url="/images/pfp.jpg" />
 		<h5>Serge Harb</h5>
 	</div>
 </Card>

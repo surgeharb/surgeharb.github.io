@@ -1,15 +1,17 @@
 <script>
 	import Card from '../simple/Card.svelte';
-	import ExperienceRow from './ExperienceRow.svelte';
+	import TabView from '../simple/TabView.svelte';
+	import Companies from './Tabs/Companies.svelte';
+	import Projects from './Tabs/Projects.svelte';
+	import Skills from './Tabs/Skills.svelte';
 </script>
 
 <Card>
-	<ExperienceRow />
-	<ExperienceRow />
-	<ExperienceRow />
-	<ExperienceRow />
-	<ExperienceRow />
+	<TabView
+		tabs={[
+			{ name: 'Projects', component: Projects },
+			{ name: 'Skills', component: Skills },
+			{ name: 'Companies', component: Companies }
+		]}
+	/>
 </Card>
-
-<style>
-</style>
