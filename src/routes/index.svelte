@@ -1,12 +1,14 @@
 <script>
 	import Card from '../components/simple/Card.svelte';
 	import Profile from '../components/complex/Profile.svelte';
+	import Experience from '../components/complex/Experience.svelte';
 </script>
 
-<div class="container" style="padding:16px">
+<div class="container" style="padding-top:3.5rem">
 	<div class="row">
 		<div class="eight columns">
 			<Profile />
+			<Experience />
 		</div>
 		<div class="four columns">
 			<Card>
