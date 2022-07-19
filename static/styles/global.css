@@ -5,11 +5,20 @@
 html {
 	--border-radius: 1.5rem;
 	--background-color: #f5f3fa;
-	--box-shadow-sm: 0px 2px 6px -2px rgb(24 39 75 / 8%), 0px 4px 8px -2px rgb(24 39 75 / 5%);
+	--box-shadow-sm: 0px 2px 6px -2px rgb(24 39 75 / 8%),
+		0px 4px 8px -2px rgb(24 39 75 / 5%);
+}
+
+img {
+	-webkit-user-drag: none;
 }
 
 body {
 	background-color: var(--background-color);
+}
+
+.radius {
+	border-radius: var(--border-radius);
 }
 
 .flex {

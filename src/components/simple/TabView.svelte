@@ -8,10 +8,10 @@
 	let selected = 0;
 </script>
 
-<div class="wrapper flex justify-space-between align-center">
+<div class="wrapper flex justify-space-between align-center radius">
 	{#each tabs as tab, i}
 		<div
-			class="flex justify-center align-center"
+			class="flex justify-center align-center radius"
 			class:selected={selected === i}
 			on:click={() => (selected = i)}
 		>
@@ -24,7 +24,6 @@
 <style>
 	.wrapper {
 		background-color: var(--background-color);
-		border-radius: var(--border-radius);
 		margin-bottom: 2.5rem;
 		height: 4rem;
 		gap: 0.5rem;
@@ -32,8 +31,8 @@
 
 	.wrapper > div {
 		width: 100%;
+		cursor: pointer;
 		text-align: center;
-		border-radius: var(--border-radius);
 		margin: 0 0.5rem;
 		height: 3rem;
 	}

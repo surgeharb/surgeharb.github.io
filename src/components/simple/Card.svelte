@@ -1,14 +1,10 @@
-<div class="card">
+<div class="flex direction-column justify-space-between radius">
 	<slot />
 </div>
 
 <style>
-	.card {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+	div {
 		box-shadow: var(--box-shadow-sm);
-		border-radius: var(--border-radius);
 		background-color: #fff;
 		margin-bottom: 2.5rem;
 		padding: 2.5rem;
