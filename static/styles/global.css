@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	--background-color: #f5f3fa;
+}
+
+body {
+	background-color: var(--background-color);
+}
+
+.flex {
+	display: flex;
+}
+
+.flex.direction-column {
+	flex-direction: column;
+}
+
+.flex.justify-center {
+	justify-content: center;
+}
+
+.flex.justify-space-between {
+	justify-content: space-between;
+}
+
+.flex.justify-space-around {
+	justify-content: space-around;
+}
+
+.flex.align-center {
+	align-items: center;
+}
