@@ -26,12 +26,13 @@
 		background-color: var(--background-color);
 		margin-bottom: 2.5rem;
 		height: 4rem;
-		gap: 0.5rem;
 	}
 
 	.wrapper > div {
 		width: 100%;
 		cursor: pointer;
+		will-change: background-color;
+		transition: background-color 0.3s ease;
 		text-align: center;
 		margin: 0 0.5rem;
 		height: 3rem;
@@ -43,5 +44,11 @@
 
 	.wrapper > div.selected {
 		background-color: #fff;
+	}
+
+	@media (min-width: 400px) {
+		.wrapper {
+			gap: 0.5rem;
+		}
 	}
 </style>

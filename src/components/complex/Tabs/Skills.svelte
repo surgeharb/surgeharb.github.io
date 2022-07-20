@@ -1,7 +1,39 @@
 <script>
-	import ContentRow from '../ContentRow.svelte';
+	import ContentCard from '../ContentCard.svelte';
 </script>
 
-<ContentRow url="/images/preply.png" leftText="Skill 1" />
-<ContentRow url="/images/tf961.jpeg" leftText="Skill 2" />
-<ContentRow url="/images/fibler.jpeg" leftText="Skill 3" />
+<div class="wrapper flex wrap align-center">
+	<ContentCard
+		link="https://sergeharb.com"
+		image="/images/js.png"
+		name="JavaScript"
+	/>
+	<ContentCard
+		link="https://www.typescriptlang.org/"
+		image="/images/ts.png"
+		name="TypeScript"
+	/>
+	<ContentCard
+		link="https://reactjs.org"
+		image="/images/react.png"
+		name="React"
+	/>
+	<ContentCard
+		link="https://docs.soliditylang.org/en/v0.8.15/"
+		image="/images/solidity.png"
+		name="Solidity"
+	/>
+</div>
+
+<style>
+	.wrapper {
+		gap: 1.5rem;
+		justify-content: space-evenly;
+	}
+	@media (min-width: 750px) {
+		.wrapper {
+			gap: 1.5rem;
+			justify-content: space-between;
+		}
+	}
+</style>

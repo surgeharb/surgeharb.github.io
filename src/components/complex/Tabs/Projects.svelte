@@ -1,7 +1,27 @@
 <script>
-	import ContentRow from '../ContentRow.svelte';
+	import ContentCard from '../ContentCard.svelte';
 </script>
 
-<ContentRow url="/images/preply.png" leftText="Project 1" />
-<ContentRow url="/images/tf961.jpeg" leftText="Project 2" />
-<ContentRow url="/images/fibler.jpeg" leftText="Project 3" />
+<div class="wrapper flex wrap justify-space-between align-center">
+	<ContentCard />
+	<ContentCard />
+	<ContentCard />
+	<ContentCard />
+	<ContentCard />
+	<ContentCard />
+	<ContentCard />
+	<ContentCard />
+</div>
+
+<style>
+	.wrapper {
+		gap: 1.5rem;
+		justify-content: space-evenly;
+	}
+	@media (min-width: 750px) {
+		.wrapper {
+			gap: 1.5rem;
+			justify-content: space-between;
+		}
+	}
+</style>

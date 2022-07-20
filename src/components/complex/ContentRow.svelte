@@ -8,7 +8,7 @@
 
 <div class="wrapper flex justify-space-between align-center">
 	<div class="flex justify-space-between align-center">
-		<Avatar size="sm" {url} />
+		<Avatar circle size="xs" {url} />
 		<span class="left-text">{leftText}</span>
 	</div>
 	<span class="right-text">{rightText}</span>

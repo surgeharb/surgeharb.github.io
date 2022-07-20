@@ -1,5 +1,6 @@
 <script>
-	import Card from '../components/simple/Card.svelte';
+	import Games from '../components/complex/Games.svelte';
+	import Tools from '../components/complex/Tools.svelte';
 	import Profile from '../components/complex/Profile.svelte';
 	import Experience from '../components/complex/Experience.svelte';
 </script>
@@ -11,16 +12,8 @@
 			<Experience />
 		</div>
 		<div class="four columns">
-			<Card>
-				<p>
-					Culpa nisi nisi esse culpa magna Lorem. Proident excepteur ad elit labore quis mollit
-					laboris id amet esse velit qui incididunt dolor. Ex ut aute do consequat nulla consequat
-					deserunt consectetur. Incididunt proident commodo ullamco irure proident do fugiat
-					pariatur consectetur ipsum officia. Cillum mollit dolor reprehenderit nulla laborum id ut
-					labore. Deserunt laborum duis duis proident et qui commodo quis sit do. Anim ex amet
-					commodo ad et adipisicing.
-				</p>
-			</Card>
+			<Games />
+			<Tools />
 		</div>
 	</div>
 </div>
