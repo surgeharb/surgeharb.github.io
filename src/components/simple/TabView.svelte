@@ -31,6 +31,7 @@
 	.wrapper > div {
 		width: 100%;
 		cursor: pointer;
+		font-size: 1rem;
 		will-change: background-color;
 		transition: background-color 0.3s ease;
 		text-align: center;
@@ -49,6 +50,9 @@
 	@media (min-width: 400px) {
 		.wrapper {
 			gap: 0.5rem;
+		}
+		.wrapper > div {
+			font-size: 1.5rem;
 		}
 	}
 </style>
