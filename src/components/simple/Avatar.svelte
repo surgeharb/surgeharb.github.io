@@ -7,7 +7,7 @@
 
 	const imgSrc =
 		imageSrc ||
-		'https://assets.sherbet.com/tokens/831ef4f8-1a3d-4376-ad49-f42052d3bf60.png';
+		'https://erenichu.sirv.com/Portfolio/pfp.jpg?grayscale=true&blur=30&w=108&h=108';
 
 	const sizes = {
 		xs: '36px',
