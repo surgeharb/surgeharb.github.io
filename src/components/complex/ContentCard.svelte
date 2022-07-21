@@ -1,6 +1,6 @@
 <script>
-	import Avatar from '../simple/Avatar.svelte';
-	import Card from '../simple/Card.svelte';
+	import Avatar from '../simple/Avatar/index.svelte';
+	import Card from '../simple/Card/index.svelte';
 
 	export let link = '';
 	export let name = '';

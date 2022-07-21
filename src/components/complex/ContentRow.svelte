@@ -1,5 +1,5 @@
 <script>
-	import Avatar from '../simple/Avatar.svelte';
+	import Avatar from '../simple/Avatar/index.svelte';
 
 	export let url = '';
 	export let leftText = '';

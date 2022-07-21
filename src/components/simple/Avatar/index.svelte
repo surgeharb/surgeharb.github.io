@@ -1,5 +1,15 @@
-<script>
-	export let size = 'md';
+<script lang="ts">
+	type sizesType = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+
+	const sizes: Record<sizesType, string> = {
+		xs: '36px',
+		sm: '54px',
+		md: '72px',
+		lg: '108px',
+		xl: '144px'
+	};
+
+	export let size: sizesType = 'md';
 	export let circle = false;
 	export let imageStyle = '';
 	export let imageSrcSet = '';
@@ -8,14 +18,6 @@
 	const imgSrc =
 		imageSrc ||
 		'https://erenichu.sirv.com/Portfolio/pfp.jpg?grayscale=true&blur=30&w=108&h=108';
-
-	const sizes = {
-		xs: '36px',
-		sm: '54px',
-		md: '72px',
-		lg: '108px',
-		xl: '144px'
-	};
 </script>
 
 <img
@@ -28,13 +30,4 @@
 	class:circle
 />
 
-<style>
-	img {
-		object-fit: cover;
-		box-shadow: var(--box-shadow-md);
-		border-radius: var(--border-radius);
-	}
-	.circle {
-		border-radius: 50%;
-	}
-</style>
+<style src="./styles.css"></style>

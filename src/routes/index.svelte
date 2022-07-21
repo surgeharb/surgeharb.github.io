@@ -3,10 +3,6 @@
 	import Tools from '../components/complex/Tools.svelte';
 	import Profile from '../components/complex/Profile.svelte';
 	import Experience from '../components/complex/Experience.svelte';
-
-	const isDesktop =
-		typeof window !== 'undefined' &&
-		window.matchMedia('only screen and (min-width: 1024px)').matches;
 </script>
 
 <div class="container" style="padding-top:3.5rem">
@@ -27,22 +23,4 @@
 	</div>
 </div>
 
-<style>
-	.only-mobile {
-		display: block;
-	}
-
-	.only-desktop {
-		display: none;
-	}
-
-	@media (min-width: 1024px) {
-		.only-mobile {
-			display: none;
-		}
-
-		.only-desktop {
-			display: block;
-		}
-	}
-</style>
+<style global src="../styles/global.css"></style>

@@ -1,6 +1,6 @@
 <script>
-	import Card from '../simple/Card.svelte';
-	import Avatar from '../simple/Avatar.svelte';
+	import Card from '../simple/Card/index.svelte';
+	import Avatar from '../simple/Avatar/index.svelte';
 </script>
 
 <Card compact>
