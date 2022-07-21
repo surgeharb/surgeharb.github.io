@@ -7,7 +7,11 @@
 	<h6 class="title">Cool Games</h6>
 	<a href="#">
 		<Card h hover mb0 compact>
-			<Avatar size="sm" url="/images/game.webp" />
+			<Avatar
+				size="sm"
+				imageSrc="https://erenichu.sirv.com/Portfolio/game.webp?w=54&h=54"
+				imageSrcSet="https://erenichu.sirv.com/Portfolio/game.webp?w=54&h=54 1x, https://erenichu.sirv.com/Portfolio/game.webp?w=108&h=108 2x"
+			/>
 			<div class="flex align-center">Metaverse RPG</div>
 		</Card>
 	</a>

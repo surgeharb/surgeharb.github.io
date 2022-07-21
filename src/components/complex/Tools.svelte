@@ -7,13 +7,21 @@
 	<h6 class="title">Awesome Tools</h6>
 	<a href="#">
 		<Card h hover mb0 compact>
-			<Avatar size="sm" url="/images/wallet.webp" />
+			<Avatar
+				size="sm"
+				imageSrc="https://erenichu.sirv.com/Portfolio/wallet.webp?w=54&h=54"
+				imageSrcSet="https://erenichu.sirv.com/Portfolio/wallet.webp?w=54&h=54 1x, https://erenichu.sirv.com/Portfolio/wallet.webp?w=108&h=108 2x"
+			/>
 			<div class="flex align-center">Multi-Wallet Manager</div>
 		</Card>
 	</a>
 	<a href="#">
 		<Card h hover mb0 compact>
-			<Avatar size="sm" url="/images/wallet.webp" />
+			<Avatar
+				size="sm"
+				imageSrc="https://erenichu.sirv.com/Portfolio/wallet.webp?w=54&h=54"
+				imageSrcSet="https://erenichu.sirv.com/Portfolio/wallet.webp?w=54&h=54 1x, https://erenichu.sirv.com/Portfolio/wallet.webp?w=108&h=108 2x"
+			/>
 			<div class="flex align-center">Wallet Tracker</div>
 		</Card>
 	</a>
@@ -21,15 +29,19 @@
 		<Card h hover mb0 compact>
 			<Avatar
 				size="sm"
-				url="/images/twitter.jpeg"
-				imageStyle="object-position: 0 -1px; background-color: #000443;"
+				imageSrc="https://erenichu.sirv.com/Portfolio/twitter.jpeg?cy=3&w=54&h=54"
+				imageSrcSet="https://erenichu.sirv.com/Portfolio/twitter.jpeg?cy=3&w=54&h=54 1x, https://erenichu.sirv.com/Portfolio/twitter.jpeg?cy=6&w=108&h=108 2x"
 			/>
 			<div class="flex align-center">Twitter Banner Generator</div>
 		</Card>
 	</a>
 	<a href="https://bulksender.avasharks.io" target="_blank">
 		<Card h hover mb0 compact>
-			<Avatar size="sm" url="/images/avasharks.jpeg" />
+			<Avatar
+				size="sm"
+				imageSrc="https://erenichu.sirv.com/Portfolio/avasharks.jpeg?w=72&h=72"
+				imageSrcSet="https://erenichu.sirv.com/Portfolio/avasharks.jpeg?w=72&h=72 1x, https://erenichu.sirv.com/Portfolio/avasharks.jpeg?w=144&h=144 2x"
+			/>
 			<div class="flex align-center">
 				Avalanche Ava Sharks - NFTs Bulk Sender
 			</div>

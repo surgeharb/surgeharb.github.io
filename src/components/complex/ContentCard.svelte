@@ -4,14 +4,15 @@
 
 	export let link = '';
 	export let name = '';
-	export let image = '';
+	export let imageSrc = '';
+	export let imageSrcSet = '';
 	export let imageStyle = '';
 </script>
 
 <a href={link || '#'} target="_blank">
 	<Card mb0 hover>
 		<div class="flex direction-column justify-center align-center">
-			<Avatar url={image} {imageStyle} />
+			<Avatar {imageSrc} {imageSrcSet} {imageStyle} />
 			<span>{name || 'Unspecified'}</span>
 		</div>
 	</Card>

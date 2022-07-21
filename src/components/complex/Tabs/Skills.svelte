@@ -5,22 +5,22 @@
 <div class="wrapper flex wrap align-center">
 	<ContentCard
 		link="https://sergeharb.com"
-		image="/images/js.png"
+		imageSrc="/images/js.png"
 		name="JavaScript"
 	/>
 	<ContentCard
 		link="https://www.typescriptlang.org/"
-		image="/images/ts.png"
+		imageSrc="/images/ts.png"
 		name="TypeScript"
 	/>
 	<ContentCard
 		link="https://reactjs.org"
-		image="/images/react.png"
+		imageSrc="/images/react.png"
 		name="React"
 	/>
 	<ContentCard
 		link="https://docs.soliditylang.org/en/v0.8.15/"
-		image="/images/solidity.png"
+		imageSrc="/images/solidity.png"
 		name="Solidity"
 	/>
 </div>

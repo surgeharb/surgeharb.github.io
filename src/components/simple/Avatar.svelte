@@ -1,11 +1,12 @@
 <script>
-	export let url = '';
 	export let size = 'md';
 	export let circle = false;
 	export let imageStyle = '';
+	export let imageSrcSet = '';
+	export let imageSrc = '';
 
 	const imgSrc =
-		url ||
+		imageSrc ||
 		'https://assets.sherbet.com/tokens/831ef4f8-1a3d-4376-ad49-f42052d3bf60.png';
 
 	const sizes = {
@@ -19,6 +20,7 @@
 
 <img
 	src={imgSrc}
+	srcset={imageSrcSet}
 	width={sizes[size]}
 	height={sizes[size]}
 	style={imageStyle}

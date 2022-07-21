@@ -5,7 +5,12 @@
 
 <Card compact>
 	<div class="flex direction-column justify-space-between align-center">
-		<Avatar circle size="lg" url="/images/pfp.jpg" />
+		<Avatar
+			circle
+			size="lg"
+			imageSrc="https://erenichu.sirv.com/Portfolio/pfp.jpg?w=108&h=108"
+			imageSrcSet="https://erenichu.sirv.com/Portfolio/pfp.jpg?w=108&h=108 1x, https://erenichu.sirv.com/Portfolio/pfp.jpg?w=216&h=216 2x"
+		/>
 		<h5>Serge Harb</h5>
 		<h6>a Software Engineer</h6>
 		<div class="social-wrapper">
