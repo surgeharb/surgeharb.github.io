@@ -5,7 +5,7 @@
 
 <Card>
 	<h6 class="title">Awesome Tools</h6>
-	<a href="#">
+	<a href="/wallets-manager">
 		<Card h hover mb0 compact>
 			<Avatar
 				size="sm"

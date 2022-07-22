@@ -12,7 +12,7 @@
 			imageSrcSet="https://erenichu.sirv.com/Portfolio/pfp.jpg?w=108&h=108 1x, https://erenichu.sirv.com/Portfolio/pfp.jpg?w=216&h=216 2x"
 		/>
 		<h5>Serge Harb</h5>
-		<h6>a Software Engineer</h6>
+		<h6>Software Engineer</h6>
 		<div class="social-wrapper">
 			<a class="social" href="https://github.com/surgeharb" target="_blank">
 				<img src="/svg/github.svg" width="12" height="12" alt="gh icon" />

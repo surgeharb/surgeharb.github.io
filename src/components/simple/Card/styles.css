@@ -39,3 +39,7 @@ div {
 .hover:hover {
 	box-shadow: var(--box-shadow-md);
 }
+
+.full-height {
+	height: 100%;
+}

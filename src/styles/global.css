@@ -1033,6 +1033,10 @@ a:hover {
 	color: var(--primary-color);
 }
 
+.main.container {
+	padding-top: 2rem;
+}
+
 .radius {
 	border-radius: var(--border-radius);
 }
@@ -1078,6 +1082,10 @@ a:hover {
 }
 
 @media (min-width: 1024px) {
+	.main.container {
+		padding-top: 3rem;
+	}
+
 	.only-mobile {
 		display: none;
 	}
