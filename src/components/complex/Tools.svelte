@@ -4,7 +4,10 @@
 </script>
 
 <Card>
-	<h6 class="title">Awesome Tools</h6>
+	<div class="title-container flex align-center">
+		<img src="/svg/archive.svg" alt="apps" width="24" height="24" />
+		<h6 class="title">Awesome Tools</h6>
+	</div>
 	<a href="/wallets-manager">
 		<Card h hover mb0 compact>
 			<Avatar
@@ -50,9 +53,17 @@
 </Card>
 
 <style>
+	.title-container {
+		margin: 0;
+		gap: 0.5rem;
+		margin-bottom: 1rem;
+	}
 	.title {
 		font-weight: 600;
 		color: var(--secondary-color);
+	}
+	h6 {
+		margin-bottom: 0;
 	}
 	div {
 		margin-left: 1.5rem;

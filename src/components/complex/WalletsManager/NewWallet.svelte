@@ -3,7 +3,7 @@
 </script>
 
 <div class="wrapper" on:click={() => console.log('adding new wallet')}>
-	<Card mb0>
+	<Card mb0 compact>
 		<div class="img-container flex justify-center align-center">
 			<img src="/svg/plus.svg" alt="plus icon" width="24" height="24" />
 			<img
@@ -19,22 +19,21 @@
 
 <style>
 	.wrapper {
+		z-index: 10;
 		cursor: pointer;
-		margin-bottom: 2rem;
+		position: fixed;
+		bottom: 1.5rem;
+		right: 1.5rem;
 	}
-
-	.img-container {
+	.flex {
 		padding: 0.5rem;
 	}
-
 	.show-on-hover {
 		display: none;
 	}
-
 	.wrapper:hover img {
 		display: none;
 	}
-
 	.wrapper:hover .show-on-hover {
 		display: block;
 	}
