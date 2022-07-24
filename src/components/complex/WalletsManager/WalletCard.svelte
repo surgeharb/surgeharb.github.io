@@ -60,6 +60,7 @@
 		position: relative;
 	}
 	.copy {
+		cursor: pointer;
 		padding: 0.7rem 1.2rem;
 		position: absolute;
 		right: -1.2rem;

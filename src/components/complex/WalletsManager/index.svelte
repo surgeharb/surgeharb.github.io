@@ -10,7 +10,16 @@
 </script>
 
 <div class="flex justify-space-between align-center">
-	<h3>My Wallets</h3>
+	<div class="flex">
+		<h3>My Wallets</h3>
+		<img
+			src="/svg/plus-circle.svg"
+			class="add-wallet"
+			alt="add wallet"
+			height="24"
+			width="24"
+		/>
+	</div>
 	<img
 		on:click={selectModeOn}
 		src="/svg/multi-select.svg"
@@ -20,8 +29,8 @@
 	/>
 </div>
 <section>
-	<NewWallet />
-	<div class="flex wrap">
+	<NewWallet on:click={() => console.log('adding new wallet')} />
+	<div class="flex wrap wallets-container">
 		<WalletCard selected />
 		<WalletCard />
 		<WalletCard />
@@ -41,12 +50,17 @@
 		margin-top: 2rem;
 		margin-bottom: 10rem;
 	}
-	div {
+	.add-wallet {
+		cursor: pointer;
+		margin-left: 1rem;
+		margin-top: 1.4rem;
+	}
+	.wallets-container {
 		gap: 1rem;
 		margin-bottom: 2rem;
 	}
 	@media (min-width: 550px) {
-		div {
+		.wallets-container {
 			gap: 2rem;
 		}
 	}

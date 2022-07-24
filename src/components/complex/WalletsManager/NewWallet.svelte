@@ -2,7 +2,7 @@
 	import Card from '../../simple/Card/index.svelte';
 </script>
 
-<div class="wrapper" on:click={() => console.log('adding new wallet')}>
+<div class="wrapper">
 	<Card mb0 compact>
 		<div class="img-container flex justify-center align-center">
 			<img src="/svg/plus.svg" alt="plus icon" width="24" height="24" />
@@ -24,6 +24,12 @@
 		position: fixed;
 		bottom: 1.5rem;
 		right: 1.5rem;
+	}
+	@media (min-width: 768px) {
+		.wrapper {
+			bottom: 3rem;
+			right: 3rem;
+		}
 	}
 	.flex {
 		padding: 0.5rem;

@@ -8,7 +8,7 @@
 		<img src="/svg/archive.svg" alt="apps" width="24" height="24" />
 		<h6 class="title">Awesome Tools</h6>
 	</div>
-	<a href="/wallets-manager">
+	<a href="/tools/wallets-manager">
 		<Card h hover mb0 compact>
 			<Avatar
 				size="sm"
