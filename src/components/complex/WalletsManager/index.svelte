@@ -10,7 +10,7 @@
 </script>
 
 <div class="flex justify-space-between align-center">
-	<div class="flex">
+	<div class="flex header-container">
 		<h3>My Wallets</h3>
 		<img
 			src="/svg/plus-circle.svg"
@@ -50,10 +50,13 @@
 		margin-top: 2rem;
 		margin-bottom: 10rem;
 	}
+	.header-container {
+		align-items: center;
+	}
 	.add-wallet {
 		cursor: pointer;
 		margin-left: 1rem;
-		margin-top: 1.4rem;
+		margin-top: 0.3rem;
 	}
 	.wallets-container {
 		gap: 1rem;
