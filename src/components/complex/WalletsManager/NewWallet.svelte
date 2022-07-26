@@ -1,10 +1,15 @@
 <script>
 	import Card from '../../simple/Card/index.svelte';
+
+	export let onAddWallet = () => {};
 </script>
 
 <div class="wrapper">
 	<Card mb0 compact>
-		<div class="img-container flex justify-center align-center">
+		<div
+			on:click={onAddWallet}
+			class="img-container flex justify-center align-center"
+		>
 			<img src="/svg/plus.svg" alt="plus icon" width="24" height="24" />
 			<img
 				class="show-on-hover"
@@ -19,7 +24,7 @@
 
 <style>
 	.wrapper {
-		z-index: 10;
+		z-index: 5;
 		cursor: pointer;
 		position: fixed;
 		bottom: 1.5rem;

@@ -1,11 +1,17 @@
 <script>
 	import NewWallet from './NewWallet.svelte';
 	import WalletCard from './WalletCard.svelte';
+	import Modal from '../../simple/Modal/index.svelte';
 
+	let showModal = false;
 	let selectMode = false;
 
 	const selectModeOn = () => {
 		selectMode = true;
+	};
+
+	const openModal = () => {
+		showModal = true;
 	};
 </script>
 
@@ -13,6 +19,7 @@
 	<div class="flex header-container">
 		<h3>My Wallets</h3>
 		<img
+			on:click={openModal}
 			src="/svg/plus-circle.svg"
 			class="add-wallet"
 			alt="add wallet"
@@ -29,7 +36,7 @@
 	/>
 </div>
 <section>
-	<NewWallet on:click={() => console.log('adding new wallet')} />
+	<NewWallet onAddWallet={openModal} />
 	<div class="flex wrap wallets-container">
 		<WalletCard selected />
 		<WalletCard />
@@ -40,6 +47,9 @@
 		<WalletCard />
 		<WalletCard />
 	</div>
+	{#if showModal}
+		<Modal on:close={() => (showModal = false)} />
+	{/if}
 </section>
 
 <style>
