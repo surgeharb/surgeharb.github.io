@@ -1,14 +1,23 @@
-<script>
+<script lang="ts">
 	import Card from '../../../simple/Card/index.svelte';
 	import Avatar from '../../../simple/Avatar/index.svelte';
 
-	export let name = 'BTC';
-	export let imageStyle = 'padding: 1rem';
-	export let imageSrc = '/images/btc.png';
+	type Token = 'BTC' | 'ETH' | 'SOL' | 'AVAX';
+
+	const imageTokenMap: Record<Token, string> = {
+		BTC: '/images/btc.png',
+		ETH: '/images/eth.png',
+		SOL: '/images/sol.png',
+		AVAX: '/images/avax.png'
+	};
+
+	export let name = 'Bitcoin Wallet';
+	export let imageStyle = 'padding: .8rem';
 	export let address = '0x12...89';
 	export let balance = '1.1023';
-	export let token = 'BTC';
 	export let selected = false;
+	export let token: Token = 'BTC';
+	export let imageSrc = imageTokenMap[token];
 
 	let copied = false;
 

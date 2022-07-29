@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { getWalletBalance } from '../../../utils/wallet';
 	import NewWallet from './NewWallet/index.svelte';
 	import WalletCard from './WalletCard/index.svelte';
 	import Modal from '../../simple/Modal/index.svelte';
@@ -16,28 +17,44 @@
 
 	const closeModal = () => {
 		currentWalletAddress = '';
-		currentWalletToken = '';
+		currentWalletType = '';
 		currentWalletName = '';
 		showModal = false;
 	};
 
-	const onSubmit = () => {
+	const onSubmit = async () => {
+		const [currentWalletChain, currentWalletToken] =
+			currentWalletType.split(':');
+
 		wallets = [
 			...wallets,
 			{
-				balance: 0,
 				name: currentWalletName,
 				token: currentWalletToken,
-				address: currentWalletAddress
+				address: currentWalletAddress,
+				balance: await getWalletBalance(
+					currentWalletAddress,
+					currentWalletChain
+				)
 			}
 		];
+
+		window.localStorage.setItem('wallets', JSON.stringify(wallets));
 
 		closeModal();
 	};
 
-	let wallets: any[] = [];
+	const onChangeWalletType = (e: any) => (currentWalletType = e.target.value);
+
+	const storageWallets =
+		typeof window !== 'undefined'
+			? window.localStorage.getItem('wallets')
+			: null;
+
+	let wallets = storageWallets ? JSON.parse(storageWallets) : [];
+
 	let currentWalletName = '';
-	let currentWalletToken = '';
+	let currentWalletType = '';
 	let currentWalletAddress = '';
 </script>
 
@@ -69,6 +86,7 @@
 				name={wallet.name}
 				token={wallet.token}
 				address={wallet.address}
+				balance={wallet.balance}
 			/>
 		{/each}
 	</div>
@@ -77,22 +95,24 @@
 			<div slot="header">
 				<h5>Insert Wallet Details</h5>
 			</div>
+			<select value={currentWalletType} on:change={onChangeWalletType}>
+				<option value="" disabled>Select wallet type</option>
+				<option value="eth:ETH">Ethereum</option>
+				<option value="avalanche:AVAX">Avalanche C-Chain</option>
+				<option value="polygon:MATIC">Polygon Matic</option>
+				<option value="solana:SOL">Solana</option>
+				<option value="bsc:BNB">BNB</option>
+			</select>
 			<input
 				type="text"
 				name="input-wallet-name"
-				placeholder="wallet name"
+				placeholder="Type a wallet name"
 				bind:value={currentWalletName}
 			/>
 			<input
 				type="text"
-				name="input-wallet-token"
-				placeholder="wallet token"
-				bind:value={currentWalletToken}
-			/>
-			<input
-				type="text"
 				name="input-wallet-address"
-				placeholder="wallet address"
+				placeholder="Type your wallet address"
 				bind:value={currentWalletAddress}
 			/>
 		</Modal>
