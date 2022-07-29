@@ -1,6 +1,6 @@
-<script>
-	import NewWallet from './NewWallet.svelte';
-	import WalletCard from './WalletCard.svelte';
+<script lang="ts">
+	import NewWallet from './NewWallet/index.svelte';
+	import WalletCard from './WalletCard/index.svelte';
 	import Modal from '../../simple/Modal/index.svelte';
 
 	let showModal = false;
@@ -13,6 +13,32 @@
 	const openModal = () => {
 		showModal = true;
 	};
+
+	const closeModal = () => {
+		currentWalletAddress = '';
+		currentWalletToken = '';
+		currentWalletName = '';
+		showModal = false;
+	};
+
+	const onSubmit = () => {
+		wallets = [
+			...wallets,
+			{
+				balance: 0,
+				name: currentWalletName,
+				token: currentWalletToken,
+				address: currentWalletAddress
+			}
+		];
+
+		closeModal();
+	};
+
+	let wallets: any[] = [];
+	let currentWalletName = '';
+	let currentWalletToken = '';
+	let currentWalletAddress = '';
 </script>
 
 <div class="flex justify-space-between align-center">
@@ -38,43 +64,39 @@
 <section>
 	<NewWallet onAddWallet={openModal} />
 	<div class="flex wrap wallets-container">
-		<WalletCard selected />
-		<WalletCard />
-		<WalletCard />
-		<WalletCard />
-		<WalletCard />
-		<WalletCard />
-		<WalletCard />
-		<WalletCard />
+		{#each wallets as wallet}
+			<WalletCard
+				name={wallet.name}
+				token={wallet.token}
+				address={wallet.address}
+			/>
+		{/each}
 	</div>
 	{#if showModal}
-		<Modal on:close={() => (showModal = false)} />
+		<Modal on:close={closeModal} on:submit={onSubmit}>
+			<div slot="header">
+				<h5>Insert Wallet Details</h5>
+			</div>
+			<input
+				type="text"
+				name="input-wallet-name"
+				placeholder="wallet name"
+				bind:value={currentWalletName}
+			/>
+			<input
+				type="text"
+				name="input-wallet-token"
+				placeholder="wallet token"
+				bind:value={currentWalletToken}
+			/>
+			<input
+				type="text"
+				name="input-wallet-address"
+				placeholder="wallet address"
+				bind:value={currentWalletAddress}
+			/>
+		</Modal>
 	{/if}
 </section>
 
-<style>
-	h3 {
-		margin-bottom: 0;
-	}
-	section {
-		margin-top: 2rem;
-		margin-bottom: 10rem;
-	}
-	.header-container {
-		align-items: center;
-	}
-	.add-wallet {
-		cursor: pointer;
-		margin-left: 1rem;
-		margin-top: 0.3rem;
-	}
-	.wallets-container {
-		gap: 1rem;
-		margin-bottom: 2rem;
-	}
-	@media (min-width: 550px) {
-		.wallets-container {
-			gap: 2rem;
-		}
-	}
-</style>
+<style src="./styles.css"></style>

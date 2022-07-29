@@ -1,6 +1,6 @@
 <script>
-	import Card from '../../simple/Card/index.svelte';
-	import Avatar from '../../simple/Avatar/index.svelte';
+	import Card from '../../../simple/Card/index.svelte';
+	import Avatar from '../../../simple/Avatar/index.svelte';
 
 	export let name = 'BTC';
 	export let imageStyle = 'padding: 1rem';
@@ -47,34 +47,4 @@
 	</Card>
 </div>
 
-<style>
-	.wrapper {
-		min-width: 162px;
-		flex: 1;
-	}
-	.selected {
-		border: 2px solid var(--primary-color);
-		border-radius: var(--border-radius);
-	}
-	.card-container {
-		position: relative;
-	}
-	.copy {
-		cursor: pointer;
-		padding: 0.7rem 1.2rem;
-		position: absolute;
-		right: -1.2rem;
-		top: -2rem;
-	}
-	.flex {
-		gap: 1rem;
-		overflow: hidden;
-	}
-	.avatar-container {
-		padding-bottom: 1.2rem;
-	}
-	h6 {
-		margin-bottom: 0;
-		font-weight: 500;
-	}
-</style>
+<style src="./styles.css"></style>

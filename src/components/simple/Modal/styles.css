@@ -11,18 +11,29 @@
 .modal {
 	position: absolute;
 	left: 50%;
-	top: 50%;
+	top: 200px;
 	width: calc(100vw - 6rem);
 	max-width: 50rem;
 	max-height: calc(100vh - 6rem);
 	overflow: auto;
-	transform: translate(-50%, -50%);
+	transform: translateX(-50%);
 	padding: 2rem;
 	border-radius: var(--border-radius);
 	background: white;
 	z-index: 11;
 }
 
+.btn-group {
+	gap: 1rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
 button {
 	display: block;
+	margin: 0;
+}
+
+hr {
+	margin: 1rem 0 2rem;
 }

@@ -1,0 +1,30 @@
+.wrapper {
+	z-index: 5;
+	cursor: pointer;
+	position: fixed;
+	bottom: 1.5rem;
+	right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+	.wrapper {
+		bottom: 3rem;
+		right: 3rem;
+	}
+}
+
+.flex {
+	padding: 0.5rem;
+}
+
+.show-on-hover {
+	display: none;
+}
+
+.wrapper:hover img {
+	display: none;
+}
+
+.wrapper:hover .show-on-hover {
+	display: block;
+}

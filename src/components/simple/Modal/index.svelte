@@ -3,6 +3,7 @@
 
 	const dispatch = createEventDispatcher();
 	const close = () => dispatch('close');
+	const submit = () => dispatch('submit');
 
 	let modal: any;
 
@@ -48,8 +49,11 @@
 	<slot />
 	<hr />
 
-	<!-- svelte-ignore a11y-autofocus -->
-	<button autofocus on:click={close}>close modal</button>
+	<div class="btn-group">
+		<!-- svelte-ignore a11y-autofocus -->
+		<button autofocus on:click={close}>Cancel</button>
+		<button on:click={submit}>Submit</button>
+	</div>
 </div>
 
 <style src="./styles.css"></style>
