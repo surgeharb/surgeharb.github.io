@@ -31,6 +31,7 @@
 			{
 				name: currentWalletName,
 				token: currentWalletToken,
+				chain: currentWalletChain,
 				address: currentWalletAddress,
 				balance: await getWalletBalance(
 					currentWalletAddress,
@@ -51,7 +52,18 @@
 			? window.localStorage.getItem('wallets')
 			: null;
 
-	let wallets = storageWallets ? JSON.parse(storageWallets) : [];
+	const walletsParsed = storageWallets ? JSON.parse(storageWallets) : [];
+
+	let wallets: any[] = [];
+
+	(async () => {
+		wallets = await Promise.all(
+			walletsParsed.map(async (wallet: any) => ({
+				...wallet,
+				balance: await getWalletBalance(wallet.address, wallet.chain)
+			}))
+		);
+	})();
 
 	let currentWalletName = '';
 	let currentWalletType = '';
