@@ -1,0 +1,6 @@
+.circle {
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--box-shadow-md);
+  border-radius: var(--border-radius);
+}
