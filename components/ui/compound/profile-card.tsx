@@ -7,7 +7,7 @@ const ProfileCard = () => {
   return (
     <Card>
       <div className="flex flex-col items-center justify-between">
-        <Avatar>
+        <Avatar className="w-28 h-28">
           <AvatarImage src="https://erenichu.sirv.com/Portfolio/pfp.jpg?w=108&h=108" alt="SH" />
           <AvatarFallback>SH</AvatarFallback>
         </Avatar>

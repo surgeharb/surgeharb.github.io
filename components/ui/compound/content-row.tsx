@@ -11,15 +11,15 @@ const ContentRow: React.FC<ContentRowProps> = ({ url, leftText, rightText }) => 
   const abbr = leftText.charAt(0).toUpperCase();
 
   return (
-    <div className="wrapper">
-      <div className="left">
+    <div className="flex">
+      <div>
         <Avatar>
           <AvatarImage src={url} alt={abbr} />
           <AvatarFallback>{abbr}</AvatarFallback>
         </Avatar>
-        <span className="left-text">{leftText}</span>
+        <span>{leftText}</span>
       </div>
-      <span className="right-text">{rightText}</span>
+      <span>{rightText}</span>
     </div>
   );
 };

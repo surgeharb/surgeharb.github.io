@@ -1,6 +1,7 @@
 import { GamesCard } from '@/components/ui/compound/games-card';
 import { ToolsCard } from '@/components/ui/compound/tools-card';
 import { ProfileCard } from '@/components/ui/compound/profile-card';
+import { ExperienceCard } from '@/components/ui/compound/experience-card';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <div className="col-span-6 lg:col-span-4">
           <div className="flex flex-col gap-6">
             <ProfileCard />
+            <ExperienceCard />
           </div>
         </div>
         <div className="col-span-6 lg:col-span-2">

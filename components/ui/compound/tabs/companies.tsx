@@ -1,7 +1,7 @@
 import { ContentRow } from '@/components/ui/compound/content-row';
 
 const Companies = () => (
-  <>
+  <div className="flex flex-col gap-4">
     <ContentRow
       url="/images/preply.png"
       rightText="Preply, Barcelona 🇪🇸"
@@ -17,7 +17,7 @@ const Companies = () => (
       rightText="Fibler, Lebanon 🇱🇧"
       leftText="Software Engineer"
     />
-  </>
+  </div>
 );
 
 export { Companies };

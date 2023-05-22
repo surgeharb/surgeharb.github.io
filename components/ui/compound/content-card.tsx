@@ -16,8 +16,8 @@ const ContentCard: React.FC<ContentCardProps> = ({
 
   return (
     <a href={link} target="_blank">
-      <Card className="mb-0">
-        <div className="flex flex-col items-center justify-center">
+      <Card className="mb-0 py-6">
+        <div className="flex items-center">
           <Avatar>
             <AvatarImage src={imageSrc} alt={abbr} />
             <AvatarFallback>{abbr}</AvatarFallback>
