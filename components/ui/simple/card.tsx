@@ -6,12 +6,19 @@ interface CardProps {
   text?: string;
   children?: React.ReactNode;
   className?: string;
+  hoverable?: boolean;
+  nested?: boolean;
 }
 
-const Card: FC<CardProps> = ({ title, text, children, className = '' }) => {
+const Card: FC<CardProps> = ({ title, text, nested, hoverable, children, className = '' }) => {
   return (
     <div
-      className={cn('w-full bg-white dark:bg-slate-800 rounded-xl px-6 py-8 shadow-md', className)}
+      className={cn(
+        'w-full bg-white dark:bg-slate-800 rounded-md p-4 shadow-md',
+        hoverable ? 'hover:bg-slate-50 dark:hover:bg-slate-900 transition-all' : '',
+        nested ? 'border dark:border-slate-700 shadow-none' : '',
+        className
+      )}
     >
       {title && (
         <h3 className="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">

@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avat
 
 const ProfileCard = () => {
   return (
-    <Card>
+    <Card className="py-6">
       <div className="flex flex-col items-center justify-between gap-4">
         <Avatar className="w-28 h-28">
           <AvatarImage src="https://erenichu.sirv.com/Portfolio/pfp.jpg?w=108&h=108" alt="SH" />

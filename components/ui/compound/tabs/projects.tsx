@@ -1,7 +1,7 @@
 import { ContentCard } from '@/components/ui/compound/content-card';
 
 const Projects = () => (
-  <div className="flex flex-col gap-4">
+  <div className="flex flex-col gap-2">
     <ContentCard
       name="Traverse"
       imageSrc="https://erenichu.sirv.com/Portfolio/avasharks.jpeg?w=72&h=72"

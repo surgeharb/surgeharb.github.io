@@ -37,13 +37,13 @@ const ToolsCard = () => {
 
   return (
     <Card className="flex flex-col gap-2">
-      <div className="flex align-center">
+      <div className="flex align-center gap-1">
         <Image src="/svg/archive.svg" alt="apps" width="24" height="24" />
-        <h6 className="title">Awesome Tools</h6>
+        <h6 className="title">Awesome tools</h6>
       </div>
       {tools.map((tool) => (
         <a key={tool.name} href={tool.link} target={tool.target} rel={tool.rel}>
-          <Card className="flex gap-2 items-center py-6">
+          <Card nested hoverable className="flex gap-2 items-center">
             <Avatar>
               <AvatarImage src={tool.src} alt={tool.alt} />
               <AvatarFallback>{tool.alt.charAt(0)}</AvatarFallback>

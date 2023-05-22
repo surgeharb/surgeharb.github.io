@@ -3,15 +3,15 @@ import Image from 'next/image';
 import { Card } from '@/components/ui/simple/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar';
 
-const GamesCard = () => {
+const FeaturedCard = () => {
   return (
-    <Card>
-      <div className="flex items-center">
+    <Card className="flex flex-col gap-2">
+      <div className="flex items-center gap-1">
         <Image src="/svg/controller.svg" alt="controller" width="24" height="24" />
-        <h6 className="title">Cool Games</h6>
+        <h6 className="title">Featured today!</h6>
       </div>
       <a href="#">
-        <Card className="flex gap-2 items-center py-6">
+        <Card nested hoverable className="flex gap-2 items-center">
           <Avatar>
             <AvatarImage src="https://erenichu.sirv.com/Portfolio/game.webp?w=54&h=54" alt="Game" />
             <AvatarFallback>G</AvatarFallback>
@@ -25,4 +25,4 @@ const GamesCard = () => {
   );
 };
 
-export { GamesCard };
+export { FeaturedCard };

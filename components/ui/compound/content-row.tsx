@@ -1,4 +1,5 @@
 import React from 'react';
+import { Card } from '@/components/ui/simple/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar';
 
 export interface ContentRowProps {
@@ -11,8 +12,8 @@ const ContentRow: React.FC<ContentRowProps> = ({ url, leftText, rightText }) => 
   const abbr = leftText.charAt(0).toUpperCase();
 
   return (
-    <div className="flex">
-      <div>
+    <Card nested hoverable className="w-full flex justify-between items-center gap-4">
+      <div className="flex items-center gap-4">
         <Avatar>
           <AvatarImage src={url} alt={abbr} />
           <AvatarFallback>{abbr}</AvatarFallback>
@@ -20,7 +21,7 @@ const ContentRow: React.FC<ContentRowProps> = ({ url, leftText, rightText }) => 
         <span>{leftText}</span>
       </div>
       <span>{rightText}</span>
-    </div>
+    </Card>
   );
 };
 
