@@ -1,5 +1,7 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
+import { ThemeManager } from '@/components/theme-manager';
+import { cn } from '@/lib/utils';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -10,9 +12,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const isDarkMode =
+    typeof window !== 'undefined' ? window.localStorage.getItem('theme') === 'dark' : 'light';
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(inter.className, isDarkMode && 'dark')}>{children}</body>
+      <ThemeManager />
     </html>
   );
 }
