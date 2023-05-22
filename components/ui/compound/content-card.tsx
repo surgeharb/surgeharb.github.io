@@ -1,5 +1,4 @@
 import { Card } from '@/components/ui/simple/card';
-import { Flex } from '@/components/ui/simple/flex';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar';
 
 interface ContentCardProps {
@@ -17,22 +16,15 @@ const ContentCard: React.FC<ContentCardProps> = ({
 
   return (
     <a href={link} target="_blank">
-      <Card>
-        <Flex direction="column" justify="center" align="center">
+      <Card className="mb-0">
+        <div className="flex flex-col items-center justify-center">
           <Avatar>
             <AvatarImage src={imageSrc} alt={abbr} />
             <AvatarFallback>{abbr}</AvatarFallback>
           </Avatar>
           <span>{name}</span>
-        </Flex>
+        </div>
       </Card>
-
-      <style jsx>{`
-        a {
-          display: block;
-          width: 140px;
-        }
-      `}</style>
     </a>
   );
 };

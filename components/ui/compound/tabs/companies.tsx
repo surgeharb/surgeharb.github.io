@@ -1,8 +1,7 @@
-import { Flex } from '@/components/ui/simple/flex';
 import { ContentRow } from '@/components/ui/compound/content-row';
 
 const Companies = () => (
-  <Flex>
+  <>
     <ContentRow
       url="/images/preply.png"
       rightText="Preply, Barcelona 🇪🇸"
@@ -18,7 +17,7 @@ const Companies = () => (
       rightText="Fibler, Lebanon 🇱🇧"
       leftText="Software Engineer"
     />
-  </Flex>
+  </>
 );
 
 export { Companies };

@@ -1,35 +1,30 @@
-import * as React from 'react';
+import { FC } from 'react';
+import { cn } from '@/lib/utils';
 
 interface CardProps {
-  direction?: 'row' | 'col';
-  padding?: number;
-  margin?: number;
-  borderRadius?: number;
-  bgColor?: string;
-  hoverEffect?: boolean;
+  title?: string;
+  text?: string;
   children?: React.ReactNode;
+  className?: string;
 }
 
-const Card: React.FC<CardProps> = ({
-  direction = 'col',
-  padding = 4,
-  margin = 0,
-  borderRadius = 0,
-  bgColor = 'white',
-  hoverEffect = false,
-  children,
-}) => {
-  const baseClasses = `
-        flex
-        ${direction === 'row' ? 'flex-row' : 'flex-col'}
-        p-${padding}
-        m-${margin}
-        rounded-${borderRadius}
-        bg-${bgColor}
-        ${hoverEffect ? 'hover:shadow-lg' : ''}
-    `;
-
-  return <div className={baseClasses.trim()}>{children}</div>;
+const Card: FC<CardProps> = ({ title, text, children, className = '' }) => {
+  return (
+    <div
+      className={cn(
+        'w-full bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl',
+        className
+      )}
+    >
+      {title && (
+        <h3 className="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">
+          {title}
+        </h3>
+      )}
+      {text && <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm">{text}</p>}
+      {children}
+    </div>
+  );
 };
 
 export { Card };
