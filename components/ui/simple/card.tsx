@@ -11,10 +11,7 @@ interface CardProps {
 const Card: FC<CardProps> = ({ title, text, children, className = '' }) => {
   return (
     <div
-      className={cn(
-        'w-full bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl',
-        className
-      )}
+      className={cn('w-full bg-white dark:bg-slate-800 rounded-xl px-6 py-8 shadow-md', className)}
     >
       {title && (
         <h3 className="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">
