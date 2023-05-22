@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar-new';
 
 export interface ContentRowProps {
   url: string;

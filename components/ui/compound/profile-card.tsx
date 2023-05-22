@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Image from 'next/image';
 import { Card } from '@/components/ui/simple/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar-new';
 
 const ProfileCard = () => {
   return (
