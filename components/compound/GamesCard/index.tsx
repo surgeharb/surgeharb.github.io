@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Card from '@/components/simple/Card';
-import Flex from '@/components/simple/Flex';
-import Avatar from '@/components/simple/Avatar';
+import { Flex } from '@/components/ui/simple/Flex';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/Avatar';
 
 const GamesCard = () => {
   return (
@@ -13,7 +13,10 @@ const GamesCard = () => {
       </Flex>
       <a href="#">
         <Card h hover mb0 compact>
-          <Avatar size="sm" imageSrc="https://erenichu.sirv.com/Portfolio/game.webp?w=54&h=54" />
+          <Avatar>
+            <AvatarImage src="https://erenichu.sirv.com/Portfolio/game.webp?w=54&h=54" alt="Game" />
+            <AvatarFallback>G</AvatarFallback>
+          </Avatar>
           <Flex align="center">
             <span>Metaverse RPG</span>
           </Flex>

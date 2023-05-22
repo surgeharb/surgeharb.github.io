@@ -1,5 +1,5 @@
 import React from 'react';
-import Avatar from '@/components/simple/Avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/Avatar';
 
 export interface ContentRowProps {
   url: string;
@@ -8,10 +8,15 @@ export interface ContentRowProps {
 }
 
 const ContentRow: React.FC<ContentRowProps> = ({ url, leftText, rightText }) => {
+  const abbr = leftText.charAt(0).toUpperCase();
+
   return (
     <div className="wrapper">
       <div className="left">
-        <Avatar circle size="xs" imageSrc={url} />
+        <Avatar>
+          <AvatarImage src={url} alt={abbr} />
+          <AvatarFallback>{abbr}</AvatarFallback>
+        </Avatar>
         <span className="left-text">{leftText}</span>
       </div>
       <span className="right-text">{rightText}</span>

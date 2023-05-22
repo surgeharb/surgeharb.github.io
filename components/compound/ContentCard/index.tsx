@@ -1,26 +1,28 @@
-import { CSSProperties } from 'react';
 import Card from '@/components/simple/Card';
-import Avatar from '@/components/simple/Avatar';
-import Flex from '@/components/simple/Flex';
+import { Flex } from '@/components/ui/simple/Flex';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/Avatar';
 
 interface ContentCardProps {
   link?: string;
   name?: string;
   imageSrc: string;
-  imageStyle?: CSSProperties;
 }
 
 const ContentCard: React.FC<ContentCardProps> = ({
   link = '#',
   name = 'Unspecified',
   imageSrc,
-  imageStyle,
 }) => {
+  const abbr = name.charAt(0).toUpperCase();
+
   return (
     <a href={link} target="_blank">
       <Card mb0 hover>
         <Flex direction="column" justify="center" align="center">
-          <Avatar imageSrc={imageSrc} imageStyle={imageStyle} />
+          <Avatar>
+            <AvatarImage src={imageSrc} alt={abbr} />
+            <AvatarFallback>{abbr}</AvatarFallback>
+          </Avatar>
           <span>{name}</span>
         </Flex>
       </Card>

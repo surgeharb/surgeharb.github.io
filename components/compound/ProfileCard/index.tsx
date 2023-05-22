@@ -1,18 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
 import Card from '@/components/simple/Card';
-import Flex from '@/components/simple/Flex';
-import Avatar from '@/components/simple/Avatar';
+import { Flex } from '@/components/ui/simple/Flex';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/Avatar';
 
 const ProfileCard = () => {
   return (
     <Card compact>
       <Flex direction="column" justify="between" align="center">
-        <Avatar
-          circle
-          size="lg"
-          imageSrc="https://erenichu.sirv.com/Portfolio/pfp.jpg?w=108&h=108"
-        />
+        <Avatar>
+          <AvatarImage src="https://erenichu.sirv.com/Portfolio/pfp.jpg?w=108&h=108" alt="SH" />
+          <AvatarFallback>SH</AvatarFallback>
+        </Avatar>
         <h5>Serge Harb</h5>
         <h6>Software Engineer</h6>
         <Flex justify="center" align="center">

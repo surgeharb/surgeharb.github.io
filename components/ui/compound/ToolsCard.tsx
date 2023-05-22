@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Card from '@/components/simple/Card';
-import Avatar from '@/components/simple/Avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/Avatar';
 
 const ToolsCard = () => {
   return (
@@ -12,31 +12,50 @@ const ToolsCard = () => {
       </div>
       <a href="/tools/wallets-manager">
         <Card h hover mb0 compact>
-          <Avatar size="sm" imageSrc="https://erenichu.sirv.com/Portfolio/wallet.webp?w=54&h=54" />
+          <Avatar>
+            <AvatarImage
+              src="https://erenichu.sirv.com/Portfolio/wallet.webp?w=54&h=54"
+              alt="Wallet"
+            />
+            <AvatarFallback>W</AvatarFallback>
+          </Avatar>
           <div className="flex align-center">Multi-Wallet Manager</div>
         </Card>
       </a>
       <a href="#">
         <Card h hover mb0 compact>
-          <Avatar size="sm" imageSrc="https://erenichu.sirv.com/Portfolio/wallet.webp?w=54&h=54" />
+          {/* <Avatar size="sm" imageSrc="https://erenichu.sirv.com/Portfolio/wallet.webp?w=54&h=54" /> */}
+          <Avatar>
+            <AvatarImage
+              src="https://erenichu.sirv.com/Portfolio/wallet.webp?w=54&h=54"
+              alt="Wallet"
+            />
+            <AvatarFallback>W</AvatarFallback>
+          </Avatar>
           <div className="flex align-center">Wallet Tracker</div>
         </Card>
       </a>
       <a href="#" target="_blank" rel="noopener noreferrer">
         <Card h hover mb0 compact>
-          <Avatar
-            size="sm"
-            imageSrc="https://erenichu.sirv.com/Portfolio/twitter.jpeg?cy=3&w=54&h=54"
-          />
+          <Avatar>
+            <AvatarImage
+              src="https://erenichu.sirv.com/Portfolio/twitter.jpeg?cy=3&w=54&h=54"
+              alt="Twitter"
+            />
+            <AvatarFallback>T</AvatarFallback>
+          </Avatar>
           <div className="flex align-center">Twitter Banner Generator</div>
         </Card>
       </a>
       <a href="https://bulksender.avasharks.io" target="_blank" rel="noopener noreferrer">
         <Card h hover mb0 compact>
-          <Avatar
-            size="sm"
-            imageSrc="https://erenichu.sirv.com/Portfolio/avasharks.jpeg?w=72&h=72"
-          />
+          <Avatar>
+            <AvatarImage
+              src="https://erenichu.sirv.com/Portfolio/avasharks.jpeg?w=72&h=72"
+              alt="AvaSharks"
+            />
+            <AvatarFallback>A</AvatarFallback>
+          </Avatar>
           <div className="flex align-center">Avalanche Ava Sharks - NFTs Bulk Sender</div>
         </Card>
       </a>
@@ -68,4 +87,4 @@ const ToolsCard = () => {
   );
 };
 
-export default ToolsCard;
+export { ToolsCard };

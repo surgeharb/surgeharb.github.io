@@ -32,21 +32,12 @@ const Flex: React.FC<FlexProps> = ({
   const gapValue = gapValues[gap];
 
   return (
-    <div className={`flex-container ${direction} ${justify} ${align} ${wrap}`}>
+    <div
+      className={`flex flex-${direction} justify-${justify} items-${align} flex-${wrap} gap-${gapValue}`}
+    >
       {children}
-
-      <style jsx>{`
-        .flex-container {
-          display: flex;
-          flex-direction: ${direction};
-          justify-content: ${justify};
-          align-items: ${align};
-          flex-wrap: ${wrap};
-          gap: ${gapValue};
-        }
-      `}</style>
     </div>
   );
 };
 
-export default Flex;
+export { Flex };
