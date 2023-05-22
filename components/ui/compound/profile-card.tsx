@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
-import Card from '@/components/simple/Card';
-import { Flex } from '@/components/ui/simple/Flex';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/Avatar';
+import { Card } from '@/components/ui/simple/card';
+import { Flex } from '@/components/ui/simple/flex';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar';
 
 const ProfileCard = () => {
   return (
-    <Card compact>
+    <Card padding={0}>
       <Flex direction="column" justify="between" align="center">
         <Avatar>
           <AvatarImage src="https://erenichu.sirv.com/Portfolio/pfp.jpg?w=108&h=108" alt="SH" />
@@ -60,4 +60,4 @@ const ProfileCard = () => {
   );
 };
 
-export default ProfileCard;
+export { ProfileCard };

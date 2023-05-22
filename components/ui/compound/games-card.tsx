@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import Card from '@/components/simple/Card';
-import { Flex } from '@/components/ui/simple/Flex';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/Avatar';
+import { Card } from '@/components/ui/simple/card';
+import { Flex } from '@/components/ui/simple/flex';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar';
 
 const GamesCard = () => {
   return (
@@ -12,7 +12,7 @@ const GamesCard = () => {
         <h6 className="title">Cool Games</h6>
       </Flex>
       <a href="#">
-        <Card h hover mb0 compact>
+        <Card padding={0}>
           <Avatar>
             <AvatarImage src="https://erenichu.sirv.com/Portfolio/game.webp?w=54&h=54" alt="Game" />
             <AvatarFallback>G</AvatarFallback>
@@ -45,4 +45,4 @@ const GamesCard = () => {
   );
 };
 
-export default GamesCard;
+export { GamesCard };

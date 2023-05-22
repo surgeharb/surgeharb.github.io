@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/Avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar';
 
 export interface ContentRowProps {
   url: string;
@@ -58,4 +58,4 @@ const ContentRow: React.FC<ContentRowProps> = ({ url, leftText, rightText }) => 
   );
 };
 
-export default ContentRow;
+export { ContentRow };

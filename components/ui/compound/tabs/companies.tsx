@@ -1,7 +1,8 @@
-import ContentRow from '../ContentRow';
+import { Flex } from '@/components/ui/simple/flex';
+import { ContentRow } from '@/components/ui/compound/content-row';
 
-const Component = () => (
-  <>
+const Companies = () => (
+  <Flex>
     <ContentRow
       url="/images/preply.png"
       rightText="Preply, Barcelona 🇪🇸"
@@ -17,7 +18,7 @@ const Component = () => (
       rightText="Fibler, Lebanon 🇱🇧"
       leftText="Software Engineer"
     />
-  </>
+  </Flex>
 );
 
-export default Component;
+export { Companies };

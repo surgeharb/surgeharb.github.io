@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import Card from '@/components/simple/Card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/Avatar';
+import { Card } from '@/components/ui/simple/card';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar';
 
 const ToolsCard = () => {
   return (
@@ -11,7 +11,7 @@ const ToolsCard = () => {
         <h6 className="title">Awesome Tools</h6>
       </div>
       <a href="/tools/wallets-manager">
-        <Card h hover mb0 compact>
+        <Card>
           <Avatar>
             <AvatarImage
               src="https://erenichu.sirv.com/Portfolio/wallet.webp?w=54&h=54"
@@ -23,8 +23,7 @@ const ToolsCard = () => {
         </Card>
       </a>
       <a href="#">
-        <Card h hover mb0 compact>
-          {/* <Avatar size="sm" imageSrc="https://erenichu.sirv.com/Portfolio/wallet.webp?w=54&h=54" /> */}
+        <Card>
           <Avatar>
             <AvatarImage
               src="https://erenichu.sirv.com/Portfolio/wallet.webp?w=54&h=54"
@@ -36,7 +35,7 @@ const ToolsCard = () => {
         </Card>
       </a>
       <a href="#" target="_blank" rel="noopener noreferrer">
-        <Card h hover mb0 compact>
+        <Card>
           <Avatar>
             <AvatarImage
               src="https://erenichu.sirv.com/Portfolio/twitter.jpeg?cy=3&w=54&h=54"
@@ -48,7 +47,7 @@ const ToolsCard = () => {
         </Card>
       </a>
       <a href="https://bulksender.avasharks.io" target="_blank" rel="noopener noreferrer">
-        <Card h hover mb0 compact>
+        <Card>
           <Avatar>
             <AvatarImage
               src="https://erenichu.sirv.com/Portfolio/avasharks.jpeg?w=72&h=72"

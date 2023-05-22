@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 type GapSize = 'none' | '2xs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
@@ -13,12 +13,12 @@ interface FlexProps {
 
 const gapValues: Record<GapSize, string> = {
   none: '0',
-  '2xs': '0.25rem',
-  xs: '0.5rem',
-  sm: '1rem',
-  md: '1.5rem',
-  lg: '2rem',
-  xl: '2.5rem',
+  '2xs': '0.25',
+  xs: '0.5',
+  sm: '1',
+  md: '1.5',
+  lg: '2',
+  xl: '2.5',
 };
 
 const Flex: React.FC<FlexProps> = ({
@@ -29,11 +29,9 @@ const Flex: React.FC<FlexProps> = ({
   gap = 'sm',
   children,
 }) => {
-  const gapValue = gapValues[gap];
-
   return (
     <div
-      className={`flex flex-${direction} justify-${justify} items-${align} flex-${wrap} gap-${gapValue}`}
+      className={`flex flex-${direction} justify-${justify} items-${align} flex-${wrap} gap-${gapValues[gap]}`}
     >
       {children}
     </div>

@@ -1,6 +1,6 @@
-import Card from '@/components/simple/Card';
-import { Flex } from '@/components/ui/simple/Flex';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/Avatar';
+import { Card } from '@/components/ui/simple/card';
+import { Flex } from '@/components/ui/simple/flex';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar';
 
 interface ContentCardProps {
   link?: string;
@@ -17,7 +17,7 @@ const ContentCard: React.FC<ContentCardProps> = ({
 
   return (
     <a href={link} target="_blank">
-      <Card mb0 hover>
+      <Card>
         <Flex direction="column" justify="center" align="center">
           <Avatar>
             <AvatarImage src={imageSrc} alt={abbr} />
@@ -37,4 +37,4 @@ const ContentCard: React.FC<ContentCardProps> = ({
   );
 };
 
-export default ContentCard;
+export { ContentCard };
