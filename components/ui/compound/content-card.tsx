@@ -1,5 +1,5 @@
 import { Card } from '@/components/ui/simple/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar-new';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar';
 
 interface ContentCardProps {
   link?: string;
