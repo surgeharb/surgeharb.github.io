@@ -3,23 +3,23 @@ import { Card } from '@/components/ui/simple/card';
 import { Projects, Companies, Skills } from '@/components/ui/compound/tabs';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/simple/tabs';
 
-const ExperienceCard = () => {
+type Props = {
+  className?: string;
+};
+
+const ExperienceCard = ({ className }: Props) => {
   return (
-    <Card>
+    <Card className={className}>
       <Tabs defaultValue="projects" className="w-full">
-        <TabsList className="grid w-full grid-cols-3">
+        <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="projects">Projects</TabsTrigger>
           <TabsTrigger value="companies">Companies</TabsTrigger>
-          <TabsTrigger value="skills">Skills</TabsTrigger>
         </TabsList>
         <TabsContent value="projects">
           <Projects />
         </TabsContent>
         <TabsContent value="companies">
           <Companies />
-        </TabsContent>
-        <TabsContent value="skills">
-          <Skills />
         </TabsContent>
       </Tabs>
     </Card>

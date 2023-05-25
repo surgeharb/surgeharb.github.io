@@ -1,28 +1,14 @@
 import React from 'react';
-import Image from 'next/image';
+import { featuredToolsList } from '@/data/tools';
 import { Card } from '@/components/ui/simple/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar';
+import { ToolsCard } from './tools-card';
 
-const FeaturedCard = () => {
-  return (
-    <Card className="flex flex-col gap-2">
-      <div className="flex items-center gap-1">
-        <Image src="/svg/controller.svg" alt="controller" width="24" height="24" />
-        <h6 className="title">Featured today!</h6>
-      </div>
-      <a href="#">
-        <Card nested hoverable className="flex gap-2 items-center">
-          <Avatar>
-            <AvatarImage src="https://erenichu.sirv.com/Portfolio/game.webp?w=54&h=54" alt="Game" />
-            <AvatarFallback>G</AvatarFallback>
-          </Avatar>
-          <div className="flex flex-col items-center">
-            <span>Metaverse RPG</span>
-          </div>
-        </Card>
-      </a>
-    </Card>
-  );
+type Props = {
+  className?: string;
+};
+
+const FeaturedCard = ({ className }: Props) => {
+  return <ToolsCard title="Featured tools" tools={featuredToolsList} className={className} />;
 };
 
 export { FeaturedCard };
