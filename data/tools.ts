@@ -4,9 +4,10 @@ export const featuredToolsList: Tool[] = [
   {
     link: 'https://scriptbook.vercel.app',
     emoji: '📓',
-    alt: 'ScriptBook',
-    name: 'ScriptBook',
+    alt: 'Script Book',
+    name: 'Script Book',
     opensNewTab: true,
+    badge: 'New!',
   },
   {
     link: 'https://packapp.vercel.app',
@@ -14,6 +15,7 @@ export const featuredToolsList: Tool[] = [
     alt: 'Pack App',
     name: 'Pack App',
     opensNewTab: true,
+    badge: 'Assistant',
   },
 ];
 

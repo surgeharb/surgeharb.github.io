@@ -4,6 +4,7 @@ export interface Tool {
   alt: string;
   name: string;
   emoji?: string;
+  badge?: string;
   iconBg?: string;
   opensNewTab?: boolean;
 }
