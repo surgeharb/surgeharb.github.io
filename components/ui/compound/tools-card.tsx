@@ -32,8 +32,8 @@ const ToolsCard = ({ title, tools, className }: Props) => (
               <AvatarFallback>{tool.name.charAt(0)}</AvatarFallback>
             </Avatar>
           )}
-          <div className="flex align-center justify-between flex-1">
-            <div className="flex align-center gap-3">
+          <div className="flex items-center justify-between flex-1">
+            <div className="flex items-center gap-3">
               <span>{tool.emoji}</span>
               <span>{tool.name}</span>
             </div>

@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <div className="col-span-6 lg:col-span-2">
           <div className="flex flex-col gap-4 lg:gap-6">
-            <FeaturedCard className="hidden lg:block" />
+            <FeaturedCard className="hidden lg:flex" />
             <ToolsCard title="Other tools" tools={toolsList} />
           </div>
         </div>
