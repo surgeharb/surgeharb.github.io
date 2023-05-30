@@ -1,17 +1,11 @@
+import { projects } from '@/data/projects';
 import { ContentCard } from '@/components/ui/compound/content-card';
 
 const Projects = () => (
   <div className="flex flex-col gap-2">
-    <ContentCard
-      name="Traverse"
-      imageSrc="/images/avasharks.jpeg"
-      link="https://traverse.avasharks.io"
-    />
-    <ContentCard
-      name="Atlantis Gate"
-      imageSrc="/images/ag.svg"
-      link="https://atlantisgate.avasharks.io"
-    />
+    {projects.map((proj) => (
+      <ContentCard key={proj.name} name={proj.name} imageSrc={proj.image} link={proj.link} />
+    ))}
   </div>
 );
 

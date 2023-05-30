@@ -21,23 +21,10 @@ export const featuredToolsList: Tool[] = [
 
 export const toolsList: Tool[] = [
   {
-    link: '/tools/wallets-manager',
-    emoji: '👛',
-    alt: 'Wallet',
-    name: 'Multi-Wallet Manager',
-  },
-  {
-    link: '#',
-    emoji: '📊',
-    alt: 'Twitter',
-    name: 'Twitter Banner Generator',
-    opensNewTab: true,
-  },
-  {
-    link: 'https://bulksender.avasharks.io',
-    emoji: '🦈',
-    alt: 'AvaSharks',
-    name: 'Avalanche Ava Sharks - NFTs Bulk Sender',
+    link: 'https://pos-engine.vercel.app/',
+    emoji: '🛒',
+    alt: 'point of sale engine',
+    name: 'Point of Sale Engine',
     opensNewTab: true,
   },
 ];

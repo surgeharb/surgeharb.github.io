@@ -1,4 +1,4 @@
-import { featuredToolsList, toolsList } from '@/data/tools';
+import { toolsList } from '@/data/tools';
 import { ToolsCard } from '@/components/ui/compound/tools-card';
 import { ProfileCard } from '@/components/ui/compound/profile-card';
 import { FeaturedCard } from '@/components/ui/compound/featured-card';

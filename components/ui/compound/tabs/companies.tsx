@@ -1,22 +1,18 @@
+import { companies } from '@/data/companies';
 import { ContentRow } from '@/components/ui/compound/content-row';
 
 const Companies = () => (
   <div className="flex flex-col gap-2">
-    <ContentRow
-      url="/images/preply.png"
-      rightText="Preply, Barcelona 🇪🇸"
-      leftText="Senior Software Engineer"
-    />
-    <ContentRow
-      url="/images/tf961.jpeg"
-      rightText="TF961, Lebanon 🇱🇧"
-      leftText="Senior Software Engineer"
-    />
-    <ContentRow
-      url="/images/fibler.jpeg"
-      rightText="Fibler, Lebanon 🇱🇧"
-      leftText="Software Engineer"
-    />
+    {companies.map((company) => (
+      <ContentRow
+        key={company.name}
+        link={company.link}
+        image={company.image}
+        rightText={company.name}
+        title={company.reponsibility}
+        subtitle={company.role}
+      />
+    ))}
   </div>
 );
 
