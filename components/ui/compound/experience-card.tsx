@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Card } from '@/components/ui/simple/card';
-import { Projects, Companies, Skills } from '@/components/ui/compound/tabs';
+import { Projects, Companies } from '@/components/ui/compound/tabs';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/simple/tabs';
 
 type Props = {
