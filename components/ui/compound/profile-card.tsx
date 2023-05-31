@@ -9,7 +9,7 @@ const ProfileCard = () => {
     <Card className="py-6">
       <div className="flex flex-col items-center justify-between gap-4">
         <Avatar className="w-28 h-28">
-          <AvatarImage src="/images/pfp.jpeg" alt="SH" />
+          <AvatarImage src="/images/pfp.png" alt="SH" />
           <AvatarFallback>SH</AvatarFallback>
         </Avatar>
         <div className="flex flex-col text-center gap-1">

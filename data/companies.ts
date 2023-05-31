@@ -27,7 +27,7 @@ export const companies: Company[] = [
   },
   {
     link: 'https://tf961.com',
-    image: '/images/tf961.jpeg',
+    image: '/images/tf961.png',
     reponsibility: 'Insurance Technology',
     role: 'Software Engineer',
     name: 'TF961',
@@ -35,7 +35,7 @@ export const companies: Company[] = [
   },
   {
     link: 'https://fibler.com',
-    image: '/images/fibler.jpeg',
+    image: '/images/fibler.png',
     reponsibility: 'Backend and Infrastructure',
     role: 'Backend Engineer',
     name: 'Fibler',
