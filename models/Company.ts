@@ -3,5 +3,6 @@ export interface Company {
   name: string;
   image: string;
   role?: string;
+  location?: string;
   reponsibility: string;
 }
