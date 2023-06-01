@@ -1,25 +1,17 @@
 import React from 'react';
 import { Card } from '@/components/ui/simple/card';
+import { RowCardContent } from '@/models/RowCardContent';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar';
 
-export interface ContentRowProps {
-  link: string;
-  image: string;
-  title: string;
-  subtitle?: string;
-  location?: string;
-  name: string;
-}
-
-const ContentRow: React.FC<ContentRowProps> = ({
+const ContentRow: React.FC<RowCardContent> = ({
   link,
-  name,
   image,
   title,
   subtitle,
   location,
+  additionalText,
 }) => {
-  const abbr = name.charAt(0).toUpperCase();
+  const abbr = (additionalText || title).charAt(0).toUpperCase();
 
   return (
     <a href={link} target="_blank">
@@ -35,7 +27,7 @@ const ContentRow: React.FC<ContentRowProps> = ({
           </div>
         </div>
         <div>
-          <span>{name}</span>
+          {!!additionalText && <span>{additionalText}</span>}
           {!!location && <span className="hidden sm:inline"> - {location}</span>}
         </div>
       </Card>

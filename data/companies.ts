@@ -1,44 +1,36 @@
-import { Company } from '@/models/Company';
+import { RowCardContent } from '@/models/RowCardContent';
 
-export const companies: Company[] = [
+export const companies: RowCardContent[] = [
   {
     link: 'https://preply.com',
     image: '/images/preply.webp',
-    name: 'Preply',
-    reponsibility: 'AI Learning',
-    role: 'Software Engineer',
+    additionalText: 'Preply',
+    title: 'AI Learning',
+    subtitle: 'Software Engineer',
     location: 'Barcelona 🇪🇸',
   },
   {
     link: 'https://preply.com',
     image: '/images/preply.webp',
-    name: 'Preply',
-    reponsibility: 'Internal Tools',
-    role: 'Software Engineer',
-    location: 'Barcelona 🇪🇸',
-  },
-  {
-    link: 'https://preply.com',
-    image: '/images/preply.webp',
-    name: 'Preply',
-    reponsibility: 'Marketing Technology',
-    role: 'Software Engineer',
+    additionalText: 'Preply',
+    title: 'Marketing Technology',
+    subtitle: 'Software Engineer',
     location: 'Barcelona 🇪🇸',
   },
   {
     link: 'https://tf961.com',
     image: '/images/tf961.png',
-    reponsibility: 'Insurance Technology',
-    role: 'Software Engineer',
-    name: 'TF961',
+    title: 'Insurance Technology',
+    subtitle: 'Software Engineer',
+    additionalText: 'TF961',
     location: 'Beirut 🇱🇧',
   },
   {
     link: 'https://fibler.com',
     image: '/images/fibler.png',
-    reponsibility: 'Backend and Infrastructure',
-    role: 'Backend Engineer',
-    name: 'Fibler',
+    title: 'Backend and Infrastructure',
+    subtitle: 'Backend Engineer',
+    additionalText: 'Fibler',
     location: 'Beirut 🇱🇧',
   },
 ];
