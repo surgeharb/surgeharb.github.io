@@ -7,11 +7,19 @@ export interface ContentRowProps {
   image: string;
   title: string;
   subtitle?: string;
-  rightText: string;
+  location?: string;
+  name: string;
 }
 
-const ContentRow: React.FC<ContentRowProps> = ({ link, image, rightText, title, subtitle }) => {
-  const abbr = rightText.charAt(0).toUpperCase();
+const ContentRow: React.FC<ContentRowProps> = ({
+  link,
+  name,
+  image,
+  title,
+  subtitle,
+  location,
+}) => {
+  const abbr = name.charAt(0).toUpperCase();
 
   return (
     <a href={link} target="_blank">
@@ -23,10 +31,13 @@ const ContentRow: React.FC<ContentRowProps> = ({ link, image, rightText, title, 
           </Avatar>
           <div>
             <span className="block text-bold">{title}</span>
-            {subtitle && <span className="text-gray-500 text-xs">{subtitle}</span>}
+            {!!subtitle && <span className="text-gray-500 text-xs">{subtitle}</span>}
           </div>
         </div>
-        <span>{rightText}</span>
+        <div>
+          <span>{name}</span>
+          {!!location && <span className="hidden sm:inline"> - {location}</span>}
+        </div>
       </Card>
     </a>
   );

@@ -8,7 +8,8 @@ const Companies = () => (
         key={company.name}
         link={company.link}
         image={company.image}
-        rightText={company.name}
+        name={company.name}
+        location={company.location}
         title={company.reponsibility}
         subtitle={company.role}
       />

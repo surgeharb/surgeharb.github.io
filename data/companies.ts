@@ -7,7 +7,7 @@ export const companies: Company[] = [
     name: 'Preply',
     reponsibility: 'AI Learning',
     role: 'Software Engineer',
-    location: 'Barcelona, Spain 🇪🇸',
+    location: 'Barcelona 🇪🇸',
   },
   {
     link: 'https://preply.com',
@@ -15,7 +15,7 @@ export const companies: Company[] = [
     name: 'Preply',
     reponsibility: 'Internal Tools',
     role: 'Software Engineer',
-    location: 'Barcelona, Spain 🇪🇸',
+    location: 'Barcelona 🇪🇸',
   },
   {
     link: 'https://preply.com',
@@ -23,7 +23,7 @@ export const companies: Company[] = [
     name: 'Preply',
     reponsibility: 'Marketing Technology',
     role: 'Software Engineer',
-    location: 'Barcelona, Spain 🇪🇸',
+    location: 'Barcelona 🇪🇸',
   },
   {
     link: 'https://tf961.com',
@@ -31,7 +31,7 @@ export const companies: Company[] = [
     reponsibility: 'Insurance Technology',
     role: 'Software Engineer',
     name: 'TF961',
-    location: 'Beirut, Lebanon 🇱🇧',
+    location: 'Beirut 🇱🇧',
   },
   {
     link: 'https://fibler.com',
@@ -39,6 +39,6 @@ export const companies: Company[] = [
     reponsibility: 'Backend and Infrastructure',
     role: 'Backend Engineer',
     name: 'Fibler',
-    location: 'Beirut, Lebanon 🇱🇧',
+    location: 'Beirut 🇱🇧',
   },
 ];
