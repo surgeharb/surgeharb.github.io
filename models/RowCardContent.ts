@@ -4,5 +4,6 @@ export interface RowCardContent {
   title: string;
   subtitle?: string;
   additionalText?: string;
+  additionalEmoji?: string;
   location?: string;
 }

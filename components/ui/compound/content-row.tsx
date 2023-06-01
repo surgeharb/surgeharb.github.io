@@ -10,6 +10,7 @@ const ContentRow: React.FC<RowCardContent> = ({
   subtitle,
   location,
   additionalText,
+  additionalEmoji,
 }) => {
   const abbr = (additionalText || title).charAt(0).toUpperCase();
 
@@ -28,7 +29,9 @@ const ContentRow: React.FC<RowCardContent> = ({
         </div>
         <div>
           {!!additionalText && <span>{additionalText}</span>}
-          {!!location && <span className="hidden sm:inline"> - {location}</span>}
+          {!!additionalText && <span className="hidden sm:inline"> • </span>}
+          {!!location && <span className="hidden sm:inline">{location}</span>}
+          {!!additionalEmoji && <span> {additionalEmoji}</span>}
         </div>
       </Card>
     </a>
