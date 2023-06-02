@@ -3,7 +3,7 @@ import { Github, Twitter } from 'lucide-react';
 import { Card } from '@/components/ui/simple/card';
 import { Avatar, AvatarNextImage } from '@/components/ui/simple/avatar';
 
-import pfpImage from '@/public/images/pfp.png';
+import pfpImage from '@/assets/images/pfp.png';
 
 const ProfileCard = () => {
   return (
