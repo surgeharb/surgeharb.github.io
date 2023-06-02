@@ -1,16 +1,16 @@
 import * as React from 'react';
-import Image from 'next/image';
-import { Card } from '@/components/ui/simple/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/simple/avatar';
 import { Github, Twitter } from 'lucide-react';
+import { Card } from '@/components/ui/simple/card';
+import { Avatar, AvatarNextImage } from '@/components/ui/simple/avatar';
+
+import pfpImage from '@/public/images/pfp.png';
 
 const ProfileCard = () => {
   return (
     <Card className="py-6">
       <div className="flex flex-col items-center justify-between gap-4">
         <Avatar className="w-28 h-28">
-          <AvatarImage src="/images/pfp.png" alt="SH" />
-          <AvatarFallback>SH</AvatarFallback>
+          <AvatarNextImage src={pfpImage} alt="SH" width={128} height={128} placeholder="blur" />
         </Avatar>
         <div className="flex flex-col text-center gap-1">
           <h5 className="text-2xl font-medium">Serge Harb</h5>

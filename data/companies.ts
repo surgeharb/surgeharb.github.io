@@ -1,9 +1,13 @@
 import { RowCardContent } from '@/models/RowCardContent';
 
+import PreplyImage from '@/assets/images/preply.webp';
+import FiblerImage from '@/assets/images/fibler.png';
+import TF961Image from '@/assets/images/tf961.png';
+
 export const companies: RowCardContent[] = [
   {
     link: 'https://preply.com',
-    image: '/images/preply.webp',
+    image: PreplyImage,
     additionalText: 'Preply',
     title: 'AI Learning',
     subtitle: 'Software Engineer',
@@ -11,7 +15,7 @@ export const companies: RowCardContent[] = [
   },
   {
     link: 'https://preply.com',
-    image: '/images/preply.webp',
+    image: PreplyImage,
     additionalText: 'Preply',
     title: 'Marketing Technology',
     subtitle: 'Software Engineer',
@@ -19,7 +23,7 @@ export const companies: RowCardContent[] = [
   },
   {
     link: 'https://tf961.com',
-    image: '/images/tf961.png',
+    image: TF961Image,
     title: 'Insurance Technology',
     subtitle: 'Software Engineer',
     additionalText: 'TF961',
@@ -27,7 +31,7 @@ export const companies: RowCardContent[] = [
   },
   {
     link: 'https://fibler.com',
-    image: '/images/fibler.png',
+    image: FiblerImage,
     title: 'Backend and Infrastructure',
     subtitle: 'Backend Engineer',
     additionalText: 'Fibler',

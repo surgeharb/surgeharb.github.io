@@ -1,9 +1,14 @@
 import { RowCardContent } from '@/models/RowCardContent';
 
+import PosImage from '@/assets/images/pos.png';
+import EchoImage from '@/assets/images/echo.png';
+import MonkeyImage from '@/assets/images/monkey.png';
+import RafflorImage from '@/assets/images/rafflor.png';
+
 export const projects: RowCardContent[] = [
   {
     link: 'https://pos-engine.vercel.app/',
-    image: '/images/pos.png',
+    image: PosImage,
     title: 'POS Engine',
     subtitle: 'Product Owner',
     additionalEmoji: '🛒',
@@ -11,7 +16,7 @@ export const projects: RowCardContent[] = [
   },
   {
     link: 'https://jungle.aptosmonkeys.club/',
-    image: '/images/monkey.png',
+    image: MonkeyImage,
     additionalEmoji: '🌴',
     subtitle: 'Lead Developer',
     title: 'The Jungle',
@@ -19,7 +24,7 @@ export const projects: RowCardContent[] = [
   },
   {
     link: 'https://echo.aptosmonkeys.club/',
-    image: '/images/echo.png',
+    image: EchoImage,
     additionalEmoji: '🪙',
     title: 'Echo Trading',
     subtitle: 'Lead Developer',
@@ -27,7 +32,7 @@ export const projects: RowCardContent[] = [
   },
   {
     link: 'https://rafflor.aptosmonkeys.club/',
-    image: '/images/rafflor.png',
+    image: RafflorImage,
     additionalEmoji: '🐒',
     title: 'Rafflor',
     subtitle: 'Lead Developer',
