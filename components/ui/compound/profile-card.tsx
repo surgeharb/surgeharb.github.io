@@ -10,7 +10,13 @@ const ProfileCard = () => {
     <Card className="py-6">
       <div className="flex flex-col items-center justify-between gap-4">
         <Avatar className="w-28 h-28">
-          <AvatarNextImage src={pfpImage} alt="SH" width={128} height={128} placeholder="blur" />
+          <AvatarNextImage
+            src={pfpImage}
+            width={128}
+            height={128}
+            placeholder="blur"
+            alt="Serge Harb intro"
+          />
         </Avatar>
         <div className="flex flex-col text-center gap-1">
           <h5 className="text-2xl font-medium">Serge Harb</h5>

@@ -27,7 +27,7 @@ const AvatarNextImage = React.forwardRef<
     ref={ref}
     width={props.width || 40}
     height={props.height || 40}
-    alt={props.alt || 'avatar image'}
+    alt={props.alt || 'avatar'}
     className={cn('aspect-square h-full w-full', className)}
   />
 ));
