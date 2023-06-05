@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import { ThemeManager } from '@/components/theme-manager';
 import { title, description, website, twitterHandle } from '@/data/metadata';
+import { Header } from '@/components/ui/simple/header';
 import { cn } from '@/lib/utils';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={cn(inter.className, isDarkMode && 'dark')}>
+        <Header />
         {children}
         <Analytics />
         <ThemeManager showStickyButton />

@@ -6,7 +6,7 @@ import { ExperienceCard } from '@/components/ui/compound/experience-card';
 
 export default function Home() {
   return (
-    <main className="min-h-screen py-6 px-6 md:px-12 bg-slate-50 dark:bg-slate-900">
+    <main className="min-h-screen pt-0 pb-6 px-6 md:px-12 bg-slate-50 dark:bg-slate-900">
       <div className="grid grid-cols-6 gap-4 lg:gap-6 grid-auto-rows-max-content max-w-6xl m-auto">
         <div className="col-span-6 lg:col-span-4">
           <div className="flex flex-col gap-4 lg:gap-6">
