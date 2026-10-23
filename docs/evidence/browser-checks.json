@@ -1,0 +1,164 @@
+{
+  "desktop": {
+    "width": 1440,
+    "height": 2737,
+    "background": "oklch(0.16 0.01 150)",
+    "fonts": [
+      {
+        "text": "~/serge-harb $ whoami",
+        "font": "14px / 20px jetbrainsMono, \"jetbrainsMono Fallback\", \"JetBrains Mono\", ui-monospace, monospace",
+        "color": "oklch(0.86 0.2 135)"
+      },
+      {
+        "text": "Serge HarbSenior AI Platform Engineer.",
+        "font": "700 72px / 75.6px spaceGrotesk, \"spaceGrotesk Fallback\", \"Space Grotesk\", system-ui, sans-serif",
+        "color": "oklch(0.94 0.01 120)"
+      },
+      {
+        "text": "I build AI platforms and software for real businesses — from teams working with agents to the products their customers use.",
+        "font": "18px / 28px spaceGrotesk, \"spaceGrotesk Fallback\", \"Space Grotesk\", system-ui, sans-serif",
+        "color": "oklch(0.65 0.015 140)"
+      },
+      {
+        "text": "// currently at Preply",
+        "font": "14px / 20px jetbrainsMono, \"jetbrainsMono Fallback\", \"JetBrains Mono\", ui-monospace, monospace",
+        "color": "oklch(0.86 0.2 135)"
+      },
+      {
+        "text": "// selected work",
+        "font": "14px / 20px jetbrainsMono, \"jetbrainsMono Fallback\", \"JetBrains Mono\", ui-monospace, monospace",
+        "color": "oklch(0.86 0.2 135)"
+      },
+      {
+        "text": "// stack",
+        "font": "14px / 20px jetbrainsMono, \"jetbrainsMono Fallback\", \"JetBrains Mono\", ui-monospace, monospace",
+        "color": "oklch(0.86 0.2 135)"
+      },
+      {
+        "text": "// work together",
+        "font": "14px / 20px jetbrainsMono, \"jetbrainsMono Fallback\", \"JetBrains Mono\", ui-monospace, monospace",
+        "color": "oklch(0.86 0.2 135)"
+      }
+    ],
+    "heading": {
+      "x": 296,
+      "y": 156,
+      "width": 848,
+      "height": 226.78125,
+      "top": 156,
+      "right": 1144,
+      "bottom": 382.78125,
+      "left": 296
+    },
+    "work": {
+      "x": 296,
+      "y": 1134.78125,
+      "width": 848,
+      "height": 867,
+      "top": 1134.78125,
+      "right": 1144,
+      "bottom": 2001.78125,
+      "left": 296
+    },
+    "fontsLoaded": "loaded"
+  },
+  "viewports": [
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 3810
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 3572
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 2881
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 2737
+    }
+  ],
+  "focus": {
+    "outlineWidth": "3px",
+    "outlineStyle": "none"
+  },
+  "links": [
+    {
+      "text": "Skip to content",
+      "href": "#main"
+    },
+    {
+      "text": "Get in touch →",
+      "href": "mailto:hello@sergeharb.com"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/surgeharb"
+    },
+    {
+      "text": "Selected work",
+      "href": "#work"
+    },
+    {
+      "text": "Preply",
+      "href": "https://preply.com"
+    },
+    {
+      "text": "Ask about this project →",
+      "href": "mailto:hello@sergeharb.com?subject=Tell%20me%20about%20CashBook%20%26%20Servicebook"
+    },
+    {
+      "text": "Visit website →",
+      "href": "https://snatchedapp.com"
+    },
+    {
+      "text": "App Store →",
+      "href": "https://apps.apple.com/app/snatched-buy-sell-fashion/id6469592139"
+    },
+    {
+      "text": "Ask about this project →",
+      "href": "mailto:hello@sergeharb.com?subject=Tell%20me%20about%20Roundhouse"
+    },
+    {
+      "text": "Ask about this project →",
+      "href": "mailto:hello@sergeharb.com?subject=Tell%20me%20about%20OpenCollectibles"
+    },
+    {
+      "text": "Visit website →",
+      "href": "https://www.layalibeirut.com"
+    },
+    {
+      "text": "Visit website →",
+      "href": "https://www.perla.kitchen"
+    },
+    {
+      "text": "hello@sergeharb.com →",
+      "href": "mailto:hello@sergeharb.com"
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "externalRequests": [],
+  "checks": [
+    "HTTP 200",
+    "title and metadata",
+    "six project entries",
+    "client email and project enquiries",
+    "real social link",
+    "no template claims",
+    "skip link",
+    "selected-work navigation",
+    "visible keyboard focus",
+    "no overflow at four widths",
+    "fonts local and loaded",
+    "Open Graph PNG",
+    "robots and sitemap",
+    "404 response"
+  ]
+}
