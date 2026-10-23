@@ -10,9 +10,9 @@ export const profile = {
 
 export const projects = [
   {
-    title: 'CashBook & Servicebook',
+    title: 'CashBook',
     description:
-      'Connecting bookkeeping, inventory workflows and customer service for small businesses. Built to reduce admin work and make AI-assisted operations part of everyday business.',
+      'AI-powered bookkeeping, invoicing and accounting for small businesses. Designed to reduce manual work to almost none.',
   },
   {
     title: 'Roundhouse',
