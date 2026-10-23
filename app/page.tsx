@@ -15,8 +15,8 @@ export default function Home() {
           <span className="block text-muted-foreground">Senior AI Platform Engineer.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-lg text-muted-foreground">
-          I build AI platforms and software for real businesses — from teams working with agents
-          to the products their customers use.
+          I help businesses grow with software and AI workflows that reduce manual work,
+          improve productivity and support revenue growth.
         </p>
         <nav aria-label="Contact and profile" className="mt-10 flex flex-wrap gap-3 font-mono text-sm">
           <a href={`mailto:${profile.email}`} className="rounded bg-primary px-5 py-3 text-primary-foreground transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
@@ -85,8 +85,8 @@ export default function Home() {
 
         <section aria-labelledby="contact-heading" className="mt-24">
           <h2 id="contact-heading" className="font-mono text-sm text-primary">{'// work together'}</h2>
-          <p className="mt-6 max-w-2xl text-xl font-semibold">Have a product to build or a workflow to improve?</p>
-          <p className="mt-3 max-w-2xl text-muted-foreground">Tell me what you are working on. I can help with AI platforms, business software, mobile apps and websites.</p>
+          <p className="mt-6 max-w-2xl text-xl font-semibold">Ready to improve how your business works?</p>
+          <p className="mt-3 max-w-2xl text-muted-foreground">I help you find where AI can save your team time, turn manual processes into practical workflows and build the software to support your next stage of growth.</p>
           <a href={`mailto:${profile.email}`} className={`mt-6 inline-block py-2 font-mono text-sm text-primary ${linkStyle}`}>{profile.email} <span aria-hidden="true">→</span></a>
         </section>
 

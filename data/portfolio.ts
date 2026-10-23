@@ -5,42 +5,42 @@ export const profile = {
   website: 'https://sergeharb.com',
   github: 'https://github.com/surgeharb',
   description:
-    'Serge Harb builds AI platforms, business software, mobile apps and websites. Senior AI Platform Software Engineer at Preply.',
+    'Serge Harb helps businesses grow with practical software and AI workflows. Senior AI Platform Software Engineer at Preply.',
 };
 
 export const projects = [
   {
     title: 'CashBook & Servicebook',
     description:
-      'Bookkeeping and restaurant software for small businesses. Building a platform that connects accounting, inventory workflows and the shopping experience.',
+      'Connecting bookkeeping, inventory workflows and customer service for small businesses. Built to reduce admin work and make AI-assisted operations part of everyday business.',
+  },
+  {
+    title: 'Roundhouse',
+    description:
+      'A self-hosted alternative to Railway for apps, databases and agents. Built to help teams adopt AI workflows, automate routine operations and focus on shipping products that grow their business.',
+  },
+  {
+    title: 'OpenCollectibles',
+    description:
+      'An AI-first platform for trading cards and collectibles, with visual binders, collection tracking and agent integrations. Built to reduce manual work and help collectors and card businesses manage growing collections.',
+  },
+  {
+    title: 'Layali Beirut',
+    description:
+      'Helping grow Layali Beirut from an idea into a profitable restaurant, combining its website, digital operations and AI workflows to support the team and reach more customers.',
+    href: 'https://layalibeirut.es',
+  },
+  {
+    title: 'Perla Kitchen',
+    description:
+      'Helping grow Perla Kitchen from an idea into a profitable catering business, with online ordering and AI workflows that reduce admin work and support repeat business.',
+    href: 'https://perla.kitchen',
   },
   {
     title: 'Snatched',
     description: 'A mobile marketplace for buying and selling second-hand fashion, with item listings, buyer and seller messaging, and order tracking.',
     href: 'https://snatchedapp.com',
     appStore: 'https://apps.apple.com/app/snatched-buy-sell-fashion/id6469592139',
-  },
-  {
-    title: 'Roundhouse',
-    description:
-      'A self-hosted alternative to Railway for deploying apps, databases and agents. Infrastructure you can run and control yourself.',
-  },
-  {
-    title: 'OpenCollectibles',
-    description:
-      'An AI-first platform for trading cards and collectibles management, with collection tracking, visual binders and an API for agents.',
-  },
-  {
-    title: 'Layali Beirut',
-    description:
-      'A restaurant website I build and maintain for an active client, helping customers discover the restaurant and its food.',
-    href: 'https://www.layalibeirut.com',
-  },
-  {
-    title: 'Perla Kitchen',
-    description:
-      'A catering website I build and maintain for an active client, with menus and a weekly meal ordering experience.',
-    href: 'https://www.perla.kitchen',
   },
 ] satisfies { title: string; description: string; href?: string; appStore?: string }[];
 
