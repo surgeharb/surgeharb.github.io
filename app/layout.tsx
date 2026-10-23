@@ -1,38 +1,38 @@
+import type { Metadata, Viewport } from 'next';
+import localFont from 'next/font/local';
+import { profile } from '@/data/portfolio';
 import './globals.css';
-import { Inter } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/react';
-import { ThemeManager } from '@/components/theme-manager';
-import { title, description, website, twitterHandle } from '@/data/metadata';
-import { Header } from '@/components/ui/simple/header';
-import { cn } from '@/lib/utils';
 
-const inter = Inter({ subsets: ['latin'] });
+const spaceGrotesk = localFont({
+  src: '../assets/fonts/space-grotesk-latin.woff2',
+  variable: '--font-space-grotesk',
+  weight: '300 700',
+  display: 'swap',
+});
+const jetbrainsMono = localFont({
+  src: '../assets/fonts/jetbrains-mono-latin.woff2',
+  variable: '--font-jetbrains-mono',
+  weight: '100 800',
+  display: 'swap',
+});
 
-export const metadata = {
+const title = `${profile.name} — ${profile.role}`;
+
+export const metadata: Metadata = {
+  metadataBase: new URL(profile.website),
   title,
-  description,
-  url: website,
-  themeColor: '#1e293b',
-  twitter: {
-    card: 'summary_large_image',
-    title,
-    description,
-    creator: twitterHandle,
-  },
+  description: profile.description,
+  alternates: { canonical: '/' },
+  openGraph: { title, description: profile.description, url: '/', siteName: profile.name, type: 'website', locale: 'en_US' },
+  twitter: { card: 'summary_large_image', title, description: profile.description, creator: '@surgeharb' },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const isDarkMode =
-    typeof window !== 'undefined' ? window.localStorage.getItem('theme') === 'dark' : 'light';
+export const viewport: Viewport = { themeColor: '#080f0b', colorScheme: 'dark' };
 
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body className={cn(inter.className, isDarkMode && 'dark')}>
-        <Header />
-        {children}
-        <Analytics />
-        <ThemeManager showStickyButton />
-      </body>
+    <html lang="en" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

@@ -1,34 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Serge Harb
 
-## Getting Started
+Personal website at https://sergeharb.com. The interface comes from the Lovable project in `surgeharb/ai-engineer-portfolio`, commit `bf79926`. This repository keeps the existing Next.js deployment.
 
-First, run the development server:
+## Run locally
 
-```bash
+Use the Node.js version in `.nvmrc`.
+
+```sh
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Check a change
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm run lint
+npm run typecheck
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Update the content
 
-## Learn More
+Edit `data/portfolio.ts` for contact details, project descriptions, project URLs, and technologies. Edit `app/page.tsx` for the introduction and Preply section.
 
-To learn more about Next.js, take a look at the following resources:
+The Preply section describes current work. It does not claim measured outcomes or disclose internal architecture. Projects without a verified public URL link to an email enquiry. Do not link private repositories from the public site.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The Space Grotesk and JetBrains Mono fonts are stored in `assets/fonts/` with their SIL Open Font License files. The site does not fetch fonts from Google at runtime.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deploy
 
-## Deploy on Vercel
+Push `main` to the existing `surgeharb/surgeharb.github.io` repository. The Vercel project is `surgeharb-github-io`, with the domain `sergeharb.com`. `vercel.json` sets the Next.js framework, `npm ci`, and the production build command. `package.json` selects Node.js 24.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The `archive` branch preserves the previous website at `f489de963245f796bdc8f8153749edd36e2cded3`. Preserve published history. To restore that interface, create a new commit on `main` from the archived files.
